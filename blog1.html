@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>on writing clean code | blog</title>
+    <title>What makes you different from Animal?</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         * {
             margin: 0;
@@ -164,123 +165,29 @@
 
     <article>
         <header class="article-header">
-            <h1 class="article-title">on writing clean code</h1>
+            <h1 class="article-title">What makes you different from Animal?</h1>
             <div class="article-meta">
                 published: 2025.06.10 | reading time: ~5 minutes
             </div>
             <div class="article-tags">
-                tags: [programming, best-practices, maintainability]
+                tags: [psychology,human-biased,]
             </div>
         </header>
 
         <div class="article-content">
-            <p>
-                clean code isn't just about making your program work—it's about making it work in a way that doesn't make future you (or your teammates) want to quit programming altogether.
-            </p>
+            
 
-            <h2>the golden rule: code is read more than it's written</h2>
+            <h2>ONE</h2>
 
             <p>
-                here's a uncomfortable truth: you'll spend more time reading code than writing it. that function you wrote six months ago? good luck understanding what it does if you named your variables <code>x</code>, <code>temp</code>, and <code>thing</code>.
+                Ability to reframe and reinterpret a difficult circumstance in a more enlightening and empowering way. - Who will Cry When You Die?
             </p>
 
-            <p>
-                consider these two approaches:
-            </p>
+          
 
-            <pre>
-// approach 1: cryptic
-function calc(x, y, z) {
-    return (x * y * z) / 100;
-}
-
-// approach 2: clear
-function calculateMonthlyInterest(principal, rate, months) {
-    return (principal * rate * months) / 100;
-}
-            </pre>
-
-            <p>
-                both functions do the same thing, but only one tells you what it's actually doing without requiring a computer science degree to decipher.
-            </p>
-
-            <h2>naming things properly</h2>
-
-            <p>
-                there are only two hard things in computer science: cache invalidation and naming things. here's how to tackle the latter:
-            </p>
-
-            <blockquote>
-                "programs must be written for people to read, and only incidentally for machines to execute." — harold abelson
-            </blockquote>
-
-            <h3>variables should tell a story</h3>
-
-            <ul>
-                <li><code>userAge</code> instead of <code>age</code></li>
-                <li><code>isLoggedIn</code> instead of <code>flag</code></li>
-                <li><code>maxRetryAttempts</code> instead of <code>limit</code></li>
-            </ul>
-
-            <h3>functions should be verbs</h3>
-
-            <ul>
-                <li><code>getUserById()</code> instead of <code>user()</code></li>
-                <li><code>validateEmail()</code> instead of <code>check()</code></li>
-                <li><code>formatCurrency()</code> instead of <code>format()</code></li>
-            </ul>
-
-            <h2>keep functions small and focused</h2>
-
-            <p>
-                a function should do one thing and do it well. if your function is longer than your screen, it's probably doing too much. unix philosophy applies here: small, composable pieces that work together.
-            </p>
-
-            <pre>
-// instead of one giant function
-function processUserData(userData) {
-    // 50 lines of validation
-    // 30 lines of transformation  
-    // 20 lines of saving
-}
-
-// break it down
-function validateUserData(userData) { /* ... */ }
-function transformUserData(userData) { /* ... */ }
-function saveUserData(userData) { /* ... */ }
-
-function processUserData(userData) {
-    const validData = validateUserData(userData);
-    const transformedData = transformUserData(validData);
-    return saveUserData(transformedData);
-}
-            </pre>
-
-            <h2>comments should explain why, not what</h2>
-
-            <p>
-                your code should be self-documenting. comments are for explaining the reasoning behind decisions, not describing what the code does.
-            </p>
-
-            <pre>
-// bad comment
-// increment i by 1
-i++;
-
-// good comment  
-// retry mechanism: exponential backoff prevents overwhelming the api
-await sleep(Math.pow(2, retryCount) * 1000);
-            </pre>
-
-            <h2>conclusion</h2>
-
-            <p>
-                writing clean code is a skill that develops over time. start with good naming, keep functions focused, and always think about the person who will read your code later—because that person is usually you, six months from now, at 2am, trying to fix a bug.
-            </p>
-
-            <p>
-                remember: code that works is good. code that works and is maintainable is great. code that works, is maintainable, and doesn't make people cry is art.
-            </p>
+            
+            
+          
         </div>
     </article>
 
@@ -289,7 +196,7 @@ await sleep(Math.pow(2, retryCount) * 1000);
             <a href="index.html">← all posts</a>
         </div>
         <div>
-            <a href="blog2.html">next: debugging mindset →</a>
+            <a href="blog2.html">next: Psychology 101 →</a>
         </div>
     </footer>
 
@@ -302,7 +209,7 @@ await sleep(Math.pow(2, retryCount) * 1000);
             }
             if (e.ctrlKey && e.key === 'n') {
                 e.preventDefault();
-                window.location.href = 'blog2.html';
+                window.location.href = 'blog1.html';
             }
         });
 
