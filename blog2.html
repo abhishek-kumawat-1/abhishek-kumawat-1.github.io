@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology 101</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', 'Monaco', 'Lucida Console', monospace;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.8;
+            padding: 40px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .nav {
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+
+        .nav a {
+            color: #666666;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .nav a:hover {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        .article-header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #000000;
+        }
+
+        .article-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            font-size: 0.85rem;
+            color: #999999;
+            margin-bottom: 10px;
+        }
+
+        .article-tags {
+            font-size: 0.8rem;
+            color: #666666;
+        }
+
+        .article-content {
+            font-size: 0.95rem;
+        }
+
+        .article-content h2 {
+            font-size: 1.3rem;
+            margin: 30px 0 15px 0;
+            font-weight: bold;
+        }
+
+        .article-content h3 {
+            font-size: 1.1rem;
+            margin: 25px 0 10px 0;
+            font-weight: bold;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+        }
+
+        .article-content code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            font-family: inherit;
+            border: 1px solid #e0e0e0;
+        }
+
+        .article-content pre {
+            background-color: #f8f8f8;
+            padding: 15px;
+            margin: 20px 0;
+            border: 1px solid #e0e0e0;
+            overflow-x: auto;
+        }
+
+        .article-content blockquote {
+            border-left: 3px solid #000000;
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #666666;
+            font-style: italic;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        .article-content li {
+            margin-bottom: 8px;
+        }
+
+        .footer-nav {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: #666666;
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.2s ease;
+        }
+
+        .footer-nav a:hover {
+            background-color: #000000;
+            color: #ffffff;
+            border-color: #000000;
+        }
+
+        .back-to-index {
+            color: #999999;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            .article-title {
+                font-size: 1.5rem;
+            }
+            
+            .footer-nav {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html">← back to index</a>
+    </nav>
+
+    <article>
+        <header class="article-header">
+            <h1 class="article-title">Psychology 101</h1>
+            <div class="article-meta">
+                published: 2025.06.10 | reading time: ~5 minutes
+            </div>
+            <div class="article-tags">
+                tags: [psychology,human-biased,]
+            </div>
+        </header>
+
+        <div class="article-content">
+            
+
+            <h2>Law of Reversed Effort</h2>
+
+            <p>
+                Take a piano teacher, for example. He always says, relax, relax. But how can you relax while your fingers are rushing over the keys? Yet they have to relax. -Aldous Huxley, The Divine Within: Selected Writings on Enlightenment <code>x</code>, <code>temp</code>, and <code>thing</code>.
+            </p>
+
+          
+
+            <h2>Diderot Effect</h2>
+
+            <p>
+               The Diderot effect is a phenomenon that occurs when acquiring a new possession leads to a spiral of consumption that results in the acquisition of even more possessions.
+            </p>
+
+            
+          
+        </div>
+    </article>
+
+    <footer class="footer-nav">
+        <div class="back-to-index">
+            <a href="index.html">← all posts</a>
+        </div>
+        <div>
+            <a href="blog3.html">next: debugging mindset →</a>
+        </div>
+    </footer>
+
+    <script>
+        // keyboard shortcuts for navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'h') {
+                e.preventDefault();
+                window.location.href = 'index.html';
+            }
+            if (e.ctrlKey && e.key === 'n') {
+                e.preventDefault();
+                window.location.href = 'blog2.html';
+            }
+        });
+
+        // smooth scrolling for any anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
