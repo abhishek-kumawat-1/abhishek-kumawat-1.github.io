@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on writing clean code | blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', 'Monaco', 'Lucida Console', monospace;
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.8;
+            padding: 40px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .nav {
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+
+        .nav a {
+            color: #666666;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .nav a:hover {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        .article-header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #000000;
+        }
+
+        .article-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .article-meta {
+            font-size: 0.85rem;
+            color: #999999;
+            margin-bottom: 10px;
+        }
+
+        .article-tags {
+            font-size: 0.8rem;
+            color: #666666;
+        }
+
+        .article-content {
+            font-size: 0.95rem;
+        }
+
+        .article-content h2 {
+            font-size: 1.3rem;
+            margin: 30px 0 15px 0;
+            font-weight: bold;
+        }
+
+        .article-content h3 {
+            font-size: 1.1rem;
+            margin: 25px 0 10px 0;
+            font-weight: bold;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+        }
+
+        .article-content code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            font-family: inherit;
+            border: 1px solid #e0e0e0;
+        }
+
+        .article-content pre {
+            background-color: #f8f8f8;
+            padding: 15px;
+            margin: 20px 0;
+            border: 1px solid #e0e0e0;
+            overflow-x: auto;
+        }
+
+        .article-content blockquote {
+            border-left: 3px solid #000000;
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #666666;
+            font-style: italic;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        .article-content li {
+            margin-bottom: 8px;
+        }
+
+        .footer-nav {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+
+        .footer-nav a {
+            color: #666666;
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid #e0e0e0;
+            transition: all 0.2s ease;
+        }
+
+        .footer-nav a:hover {
+            background-color: #000000;
+            color: #ffffff;
+            border-color: #000000;
+        }
+
+        .back-to-index {
+            color: #999999;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            .article-title {
+                font-size: 1.5rem;
+            }
+            
+            .footer-nav {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html">← back to index</a>
+    </nav>
+
+    <article>
+        <header class="article-header">
+            <h1 class="article-title">on writing clean code</h1>
+            <div class="article-meta">
+                published: 2025.06.10 | reading time: ~5 minutes
+            </div>
+            <div class="article-tags">
+                tags: [programming, best-practices, maintainability]
+            </div>
+        </header>
+
+        <div class="article-content">
+            <p>
+                clean code isn't just about making your program work—it's about making it work in a way that doesn't make future you (or your teammates) want to quit programming altogether.
+            </p>
+
+            <h2>the golden rule: code is read more than it's written</h2>
+
+            <p>
+                here's a uncomfortable truth: you'll spend more time reading code than writing it. that function you wrote six months ago? good luck understanding what it does if you named your variables <code>x</code>, <code>temp</code>, and <code>thing</code>.
+            </p>
+
+            <p>
+                consider these two approaches:
+            </p>
+
+            <pre>
+// approach 1: cryptic
+function calc(x, y, z) {
+    return (x * y * z) / 100;
+}
+
+// approach 2: clear
+function calculateMonthlyInterest(principal, rate, months) {
+    return (principal * rate * months) / 100;
+}
+            </pre>
+
+            <p>
+                both functions do the same thing, but only one tells you what it's actually doing without requiring a computer science degree to decipher.
+            </p>
+
+            <h2>naming things properly</h2>
+
+            <p>
+                there are only two hard things in computer science: cache invalidation and naming things. here's how to tackle the latter:
+            </p>
+
+            <blockquote>
+                "programs must be written for people to read, and only incidentally for machines to execute." — harold abelson
+            </blockquote>
+
+            <h3>variables should tell a story</h3>
+
+            <ul>
+                <li><code>userAge</code> instead of <code>age</code></li>
+                <li><code>isLoggedIn</code> instead of <code>flag</code></li>
+                <li><code>maxRetryAttempts</code> instead of <code>limit</code></li>
+            </ul>
+
+            <h3>functions should be verbs</h3>
+
+            <ul>
+                <li><code>getUserById()</code> instead of <code>user()</code></li>
+                <li><code>validateEmail()</code> instead of <code>check()</code></li>
+                <li><code>formatCurrency()</code> instead of <code>format()</code></li>
+            </ul>
+
+            <h2>keep functions small and focused</h2>
+
+            <p>
+                a function should do one thing and do it well. if your function is longer than your screen, it's probably doing too much. unix philosophy applies here: small, composable pieces that work together.
+            </p>
+
+            <pre>
+// instead of one giant function
+function processUserData(userData) {
+    // 50 lines of validation
+    // 30 lines of transformation  
+    // 20 lines of saving
+}
+
+// break it down
+function validateUserData(userData) { /* ... */ }
+function transformUserData(userData) { /* ... */ }
+function saveUserData(userData) { /* ... */ }
+
+function processUserData(userData) {
+    const validData = validateUserData(userData);
+    const transformedData = transformUserData(validData);
+    return saveUserData(transformedData);
+}
+            </pre>
+
+            <h2>comments should explain why, not what</h2>
+
+            <p>
+                your code should be self-documenting. comments are for explaining the reasoning behind decisions, not describing what the code does.
+            </p>
+
+            <pre>
+// bad comment
+// increment i by 1
+i++;
+
+// good comment  
+// retry mechanism: exponential backoff prevents overwhelming the api
+await sleep(Math.pow(2, retryCount) * 1000);
+            </pre>
+
+            <h2>conclusion</h2>
+
+            <p>
+                writing clean code is a skill that develops over time. start with good naming, keep functions focused, and always think about the person who will read your code later—because that person is usually you, six months from now, at 2am, trying to fix a bug.
+            </p>
+
+            <p>
+                remember: code that works is good. code that works and is maintainable is great. code that works, is maintainable, and doesn't make people cry is art.
+            </p>
+        </div>
+    </article>
+
+    <footer class="footer-nav">
+        <div class="back-to-index">
+            <a href="index.html">← all posts</a>
+        </div>
+        <div>
+            <a href="blog2.html">next: debugging mindset →</a>
+        </div>
+    </footer>
+
+    <script>
+        // keyboard shortcuts for navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'h') {
+                e.preventDefault();
+                window.location.href = 'index.html';
+            }
+            if (e.ctrlKey && e.key === 'n') {
+                e.preventDefault();
+                window.location.href = 'blog2.html';
+            }
+        });
+
+        // smooth scrolling for any anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
