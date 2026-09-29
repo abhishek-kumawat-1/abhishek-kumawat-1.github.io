@@ -1,7 +1,8 @@
+![Jev_Original](/posts/images/2026-09-30-chatgpt-image-sep-30-2026-122531-am-4g7z.png)
+
 For the last few years, progress in AI has largely meant building better Large Language Models.
 
 Give an LLM some text, and it generates more text.
-
 That architecture is incredibly useful when we want AI to write an email, explain a concept, generate code, summarize a document, or have a conversation.
 
 But a surprisingly large percentage of AI workloads don't actually require generated text.
@@ -299,5 +300,3 @@ And for developers building AI systems at scale, the question may soon change fr
 to:
 
 "Does this task need an LLM at all?"
-
-![Image](/posts/images/2026-09-30-socialimage-8nsb.jpeg)
