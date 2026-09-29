@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin | Abhishek Kumawat</title>
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  (function () {
+    var dark = false;
+    try { dark = window.matchMedia('(prefers-color-scheme: dark)').matches; } catch (e) {}
+    try { var s = localStorage.getItem('ak-theme'); if (s === 'dark' || s === 'light') dark = s === 'dark'; } catch (e) {}
+    if (dark) document.documentElement.classList.add('dark');
+  })();
+</script>
+<style>
+:root{--bg:#FFFFFF;--surface:#F7F8FA;--ink:#111827;--muted:#4B5563;--line:#E5E7EB;--accent:#2b7fff;--chip:#EEF1F5;--danger:#C62828;--ok:#1B7F3B}
+html.dark{--bg:#0a0a0a;--surface:#141414;--ink:#EDEDED;--muted:#A3A3A3;--line:#262626;--accent:#2b7fff;--chip:#1C1C1C;--danger:#FF6B6B;--ok:#4ADE80}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Mulish',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:15px;line-height:1.55;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{font-weight:800;letter-spacing:-0.02em;margin:0}
+button,input,textarea{font:inherit;color:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+[hidden]{display:none !important}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.narrow{max-width:460px}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+
+.bar{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px;flex-wrap:wrap}
+.bar strong{font-weight:800;font-size:17px}
+.bar-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;padding:0 16px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font-weight:700;font-size:14px;cursor:pointer;text-decoration:none}
+.btn:hover{border-color:var(--muted);text-decoration:none}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.primary:hover{filter:brightness(1.08)}
+.btn.danger{color:var(--danger)}
+.btn.ghost{border-color:transparent;background:transparent}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+
+.card{border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:24px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.field label{font-weight:700;font-size:13px}
+.field .hint{font-size:12.5px;color:var(--muted)}
+input[type=text],input[type=password],input[type=date],textarea{width:100%;border:1px solid var(--line);background:var(--bg);border-radius:8px;padding:10px 12px;min-height:42px}
+textarea{resize:vertical}
+.row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.check{display:flex;align-items:center;gap:8px;font-weight:600;min-height:42px}
+.check input{width:18px;height:18px}
+
+.msg{border-radius:8px;padding:10px 14px;margin:0 0 16px;font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--surface)}
+.msg.err{color:var(--danger);border-color:currentColor}
+.msg.ok{color:var(--ok);border-color:currentColor}
+
+.auth{padding:64px 0}
+.auth h1{font-size:30px;margin-bottom:6px}
+.steps{margin:0 0 20px;padding-left:20px;font-size:14px}
+.steps li{margin-bottom:6px}
+
+.list-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:32px 0 16px;flex-wrap:wrap}
+.list-head h1{font-size:28px}
+.post-row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 0;border-top:1px solid var(--line);flex-wrap:wrap}
+.post-row:last-child{border-bottom:1px solid var(--line)}
+.post-row h3{font-size:17px;font-weight:700;letter-spacing:-0.01em}
+.badge{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;padding:2px 8px;border-radius:999px;background:var(--chip);color:var(--muted);margin-left:8px;vertical-align:middle}
+.row-actions{display:flex;gap:6px;flex-wrap:wrap}
+
+.editor{padding:24px 0 64px}
+.editor-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;border:1px solid var(--line);border-bottom:0;border-radius:8px 8px 0 0;background:var(--surface);align-items:center}
+.toolbar button{min-width:36px;min-height:34px;border:0;background:transparent;border-radius:6px;cursor:pointer;font-weight:800;font-size:13px;padding:0 8px;color:var(--muted)}
+.toolbar button:hover{background:var(--chip);color:var(--ink)}
+.toolbar .sep{width:1px;height:20px;background:var(--line);margin:0 4px}
+.toolbar .spacer{flex:1}
+.toolbar .mode{font-weight:700}
+.toolbar .mode.on{background:var(--ink);color:var(--bg)}
+.body-area{border-radius:0 0 8px 8px;min-height:460px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px;line-height:1.65}
+.panes{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.panes.split{grid-template-columns:repeat(2,minmax(0,1fr))}
+.preview{border:1px solid var(--line);border-radius:8px;padding:8px 24px;min-height:460px;overflow:auto;background:var(--bg)}
+.preview h1.pt{font-size:32px;margin:16px 0 8px}
+
+/* same prose styles as the site */
+.prose{font-size:16px;line-height:1.75}
+.prose h2{font-size:26px;margin:32px 0 10px;line-height:1.25}
+.prose h3{font-size:21px;margin:28px 0 8px}
+.prose h4,.prose h5,.prose h6{font-size:17px;margin:20px 0 8px}
+.prose p{margin:0 0 16px}
+.prose ul,.prose ol{margin:0 0 16px;padding-left:22px}
+.prose img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block;margin:8px auto}
+.prose blockquote{margin:0 0 16px;padding:4px 0 4px 18px;border-left:3px solid var(--line);color:var(--muted)}
+.prose code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88em;background:var(--chip);padding:2px 6px;border-radius:5px}
+.prose pre{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;overflow-x:auto}
+.prose pre code{background:none;padding:0}
+.prose hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+.prose table{border-collapse:collapse;width:100%}
+.prose th,.prose td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left}
+
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;z-index:20}
+.overlay .card{background:var(--bg);font-weight:700}
+
+@media (max-width:760px){
+  .row{grid-template-columns:minmax(0,1fr)}
+  .panes.split{grid-template-columns:minmax(0,1fr)}
+  .auth{padding:32px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ SETUP (first time on this device) ============ -->
+<section id="view-setup" class="wrap narrow auth" hidden>
+  <h1>Set up admin</h1>
+  <p class="muted">One-time setup on this device. Your GitHub token is encrypted with your password and stored only in this browser.</p>
+  <ol class="steps">
+    <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → Fine-grained tokens → Generate new token</a>.</li>
+    <li>Repository access: <b>Only select repositories</b> → <b>abhishek-kumawat-1.github.io</b>.</li>
+    <li>Permissions → Repository permissions → <b>Contents: Read and write</b>. Nothing else.</li>
+    <li>Generate, copy the token and paste it below.</li>
+  </ol>
+  <div id="setup-msg" class="msg" hidden></div>
+  <form id="setup-form" class="card" autocomplete="off">
+    <div class="field">
+      <label for="s-user">Admin ID (your GitHub username)</label>
+      <input type="text" id="s-user" value="abhishek-kumawat-1" autocapitalize="off" spellcheck="false" required>
+    </div>
+    <div class="field">
+      <label for="s-token">GitHub fine-grained token</label>
+      <input type="password" id="s-token" placeholder="github_pat_…" autocomplete="off" required>
+    </div>
+    <div class="field">
+      <label for="s-pass">Choose a password</label>
+      <input type="password" id="s-pass" autocomplete="new-password" minlength="10" required>
+      <span class="hint">At least 10 characters. You'll use this with your ID to log in on this device.</span>
+    </div>
+    <div class="field">
+      <label for="s-pass2">Confirm password</label>
+      <input type="password" id="s-pass2" autocomplete="new-password" minlength="10" required>
+    </div>
+    <button class="btn primary" type="submit" style="width:100%">Verify &amp; save</button>
+  </form>
+</section>
+
+<!-- ============ LOGIN ============ -->
+<section id="view-login" class="wrap narrow auth" hidden>
+  <h1>Admin login</h1>
+  <p class="muted">Write and publish posts to abhishek-kumawat-1.github.io.</p>
+  <div id="login-msg" class="msg" hidden></div>
+  <form id="login-form" class="card">
+    <div class="field">
+      <label for="l-user">Admin ID</label>
+      <input type="text" id="l-user" autocomplete="username" autocapitalize="off" spellcheck="false" required>
+    </div>
+    <div class="field">
+      <label for="l-pass">Password</label>
+      <input type="password" id="l-pass" autocomplete="current-password" required>
+    </div>
+    <button class="btn primary" type="submit" style="width:100%">Log in</button>
+  </form>
+  <p class="small muted" style="margin-top:16px">New device or forgot the password? <button type="button" class="btn ghost small" id="reset-device" style="min-height:32px;padding:0 6px;color:var(--accent)">Set up again</button></p>
+</section>
+
+<!-- ============ APP ============ -->
+<div id="view-app" hidden>
+  <header class="bar">
+    <div class="wrap">
+      <strong>Blog admin</strong>
+      <div class="bar-actions">
+        <a class="btn ghost" href="../#blog" target="_blank" rel="noopener">View blog ↗</a>
+        <button class="btn" type="button" id="lock-btn">Log out</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- list -->
+  <section id="view-list" class="wrap">
+    <div class="list-head">
+      <h1>Posts</h1>
+      <div class="row-actions">
+        <button class="btn" type="button" id="refresh-btn">Refresh</button>
+        <button class="btn primary" type="button" id="new-btn">+ New post</button>
+      </div>
+    </div>
+    <div id="list-msg" class="msg" hidden></div>
+    <div id="post-list"><p class="muted">Loading…</p></div>
+    <p class="small muted" style="margin:24px 0 48px">After publishing, GitHub Pages usually updates the live site within 1–2 minutes.</p>
+  </section>
+
+  <!-- editor -->
+  <section id="view-editor" class="wrap editor" hidden>
+    <div class="editor-head">
+      <button class="btn ghost" type="button" id="back-btn">← All posts</button>
+      <div class="row-actions">
+        <label class="check"><input type="checkbox" id="e-draft"> Draft (hidden from site)</label>
+        <button class="btn primary" type="button" id="publish-btn">Publish</button>
+      </div>
+    </div>
+    <div id="editor-msg" class="msg" hidden></div>
+    <div class="field">
+      <label for="e-title">Title</label>
+      <input type="text" id="e-title" placeholder="Post title" style="font-size:20px;font-weight:700">
+    </div>
+    <div class="row">
+      <div class="field">
+        <label for="e-slug">URL slug</label>
+        <input type="text" id="e-slug" autocapitalize="off" spellcheck="false">
+        <span class="hint" id="slug-hint">abhishek-kumawat-1.github.io/#blog/…</span>
+      </div>
+      <div class="field">
+        <label for="e-date">Date</label>
+        <input type="date" id="e-date">
+      </div>
+    </div>
+    <div class="row">
+      <div class="field">
+        <label for="e-tags">Tags</label>
+        <input type="text" id="e-tags" placeholder="analytics, ml, notes">
+        <span class="hint">Comma separated.</span>
+      </div>
+      <div class="field">
+        <label for="e-summary">Summary</label>
+        <input type="text" id="e-summary" placeholder="One line shown in the post list (optional)">
+        <span class="hint">Left empty, the first lines of the post are used.</span>
+      </div>
+    </div>
+    <div class="field" style="margin-bottom:0">
+      <label for="e-body">Post</label>
+    </div>
+    <div class="toolbar" role="toolbar" aria-label="Formatting">
+      <button type="button" data-md="bold" title="Bold" aria-label="Bold">B</button>
+      <button type="button" data-md="italic" title="Italic" aria-label="Italic"><i>I</i></button>
+      <button type="button" data-md="h2" title="Heading">H2</button>
+      <button type="button" data-md="h3" title="Subheading">H3</button>
+      <span class="sep"></span>
+      <button type="button" data-md="link" title="Link">Link</button>
+      <button type="button" data-md="ul" title="Bullet list">• List</button>
+      <button type="button" data-md="ol" title="Numbered list">1. List</button>
+      <button type="button" data-md="quote" title="Quote">“ ”</button>
+      <button type="button" data-md="code" title="Code block">{ }</button>
+      <button type="button" id="img-btn" title="Upload image">Image</button>
+      <input type="file" id="img-input" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
+      <span class="spacer"></span>
+      <button type="button" class="mode on" data-mode="write">Write</button>
+      <button type="button" class="mode" data-mode="split">Split</button>
+      <button type="button" class="mode" data-mode="preview">Preview</button>
+    </div>
+    <div class="panes" id="panes">
+      <textarea id="e-body" class="body-area" placeholder="Write in Markdown. **bold**, *italic*, ## heading, - list, [link](https://…)"></textarea>
+      <div class="preview prose" id="e-preview" hidden></div>
+    </div>
+    <p class="small muted" id="autosave-note" style="margin-top:8px">Your text is auto-saved in this browser until you publish.</p>
+  </section>
+</div>
+
+<div class="overlay" id="busy" hidden><div class="card" id="busy-text">Working…</div></div>
+
+<script src="../assets/md.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  /* ---------------- config ---------------- */
+  var OWNER = 'abhishek-kumawat-1';
+  var REPO = 'abhishek-kumawat-1.github.io';
+  var STORE = 'ak-admin-v1';
+  var API = 'https://api.github.com';
+
+  var TOKEN = null;
+  var BRANCH = 'main';
+  var posts = [];
+  var editing = null;      // slug of post being edited, or null for new
+  var localImages = {};    // /posts/images/x -> object URL (for preview before Pages deploys)
+
+  var $ = function (id) { return document.getElementById(id); };
+  function show(id) { ['view-setup', 'view-login', 'view-app'].forEach(function (v) { $(v).hidden = v !== id; }); }
+  function msg(el, text, kind) { el = $(el); el.hidden = !text; el.textContent = text || ''; el.className = 'msg' + (kind ? ' ' + kind : ''); }
+  function busy(text) { $('busy').hidden = !text; if (text) $('busy-text').textContent = text; }
+
+  /* ---------------- crypto (token encrypted with ID + password) ---------------- */
+  var enc = new TextEncoder(), dec = new TextDecoder();
+  function b64(buf) { var s = '', b = new Uint8Array(buf); for (var i = 0; i < b.length; i++) s += String.fromCharCode(b[i]); return btoa(s); }
+  function unb64(str) { var s = atob(str), b = new Uint8Array(s.length); for (var i = 0; i < s.length; i++) b[i] = s.charCodeAt(i); return b; }
+  function deriveKey(user, pass, salt) {
+    return crypto.subtle.importKey('raw', enc.encode(user.toLowerCase() + '\n' + pass), 'PBKDF2', false, ['deriveKey'])
+      .then(function (base) {
+        return crypto.subtle.deriveKey({ name: 'PBKDF2', salt: salt, iterations: 310000, hash: 'SHA-256' }, base,
+          { name: 'AES-GCM', length: 256 }, false, ['encrypt', 'decrypt']);
+      });
+  }
+  function saveEncrypted(user, pass, token) {
+    var salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12));
+    return deriveKey(user, pass, salt).then(function (key) {
+      return crypto.subtle.encrypt({ name: 'AES-GCM', iv: iv }, key, enc.encode(token));
+    }).then(function (ct) {
+      localStorage.setItem(STORE, JSON.stringify({ user: user, salt: b64(salt), iv: b64(iv), ct: b64(ct) }));
+    });
+  }
+  function unlock(user, pass) {
+    var s = JSON.parse(localStorage.getItem(STORE) || 'null');
+    if (!s) return Promise.reject(new Error('Not set up on this device.'));
+    if (s.user.toLowerCase() !== user.toLowerCase()) return Promise.reject(new Error('Wrong ID or password.'));
+    return deriveKey(user, pass, unb64(s.salt)).then(function (key) {
+      return crypto.subtle.decrypt({ name: 'AES-GCM', iv: unb64(s.iv) }, key, unb64(s.ct));
+    }).then(function (pt) { return dec.decode(pt); }, function () { throw new Error('Wrong ID or password.'); });
+  }
+
+  /* ---------------- GitHub API ---------------- */
+  function gh(path, opts) {
+    opts = opts || {};
+    var headers = { 'Authorization': 'Bearer ' + TOKEN, 'Accept': 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' };
+    if (opts.body) headers['Content-Type'] = 'application/json';
+    return fetch(API + path, { method: opts.method || 'GET', headers: headers, body: opts.body ? JSON.stringify(opts.body) : undefined, cache: 'no-store' })
+      .then(function (r) {
+        if (r.status === 404 && opts.allow404) return null;
+        if (!r.ok) {
+          return r.json().catch(function () { return {}; }).then(function (j) {
+            var m = j.message || ('HTTP ' + r.status);
+            if (r.status === 401) m = 'GitHub rejected the token (it may be expired or revoked). Use "Set up again" with a new token.';
+            if (r.status === 403 && /permission|Resource not accessible/i.test(m)) m = 'The token lacks "Contents: Read and write" permission on this repository.';
+            var e = new Error(m); e.status = r.status; throw e;
+          });
+        }
+        return r.status === 204 ? null : r.json();
+      });
+  }
+  function repoPath(p) { return '/repos/' + OWNER + '/' + REPO + p; }
+  function decodeContent(b64str) { return dec.decode(unb64(b64str.replace(/\n/g, ''))); }
+  function readFile(path) {
+    return gh(repoPath('/contents/' + path + '?ref=' + encodeURIComponent(BRANCH)), { allow404: true })
+      .then(function (f) { return f ? decodeContent(f.content) : null; });
+  }
+  // One commit containing several file changes: [{path, content, encoding?, remove?}]
+  function commitFiles(changes, message, attempt) {
+    attempt = attempt || 1;
+    var headSha;
+    return gh(repoPath('/git/ref/heads/' + BRANCH)).then(function (ref) {
+      headSha = ref.object.sha;
+      return gh(repoPath('/git/commits/' + headSha));
+    }).then(function (base) {
+      return Promise.all(changes.map(function (c) {
+        if (c.remove) return Promise.resolve({ path: c.path, mode: '100644', type: 'blob', sha: null });
+        return gh(repoPath('/git/blobs'), { method: 'POST', body: { content: c.content, encoding: c.encoding || 'utf-8' } })
+          .then(function (blob) { return { path: c.path, mode: '100644', type: 'blob', sha: blob.sha }; });
+      })).then(function (tree) {
+        return gh(repoPath('/git/trees'), { method: 'POST', body: { base_tree: base.tree.sha, tree: tree } });
+      });
+    }).then(function (tree) {
+      return gh(repoPath('/git/commits'), { method: 'POST', body: { message: message, tree: tree.sha, parents: [headSha] } });
+    }).then(function (commit) {
+      return gh(repoPath('/git/refs/heads/' + BRANCH), { method: 'PATCH', body: { sha: commit.sha } });
+    }).catch(function (e) {
+      if (e.status === 422 && attempt < 3) return commitFiles(changes, message, attempt + 1); // branch moved, retry
+      throw e;
+    });
+  }
+  function loadIndex() {
+    return readFile('posts/index.json').then(function (txt) {
+      var list = [];
+      try { list = txt ? JSON.parse(txt) : []; } catch (e) { list = []; }
+      return Array.isArray(list) ? list : [];
+    });
+  }
+  function sortPosts(list) { return list.sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; }); }
+
+  function startSession(token) {
+    TOKEN = token;
+    return gh(repoPath('')).then(function (repo) {
+      BRANCH = repo.default_branch || 'main';
+      show('view-app');
+      openList();
+    });
+  }
+
+  /* ---------------- setup ---------------- */
+  $('setup-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var user = $('s-user').value.trim(), token = $('s-token').value.trim(), p1 = $('s-pass').value, p2 = $('s-pass2').value;
+    if (p1 !== p2) return msg('setup-msg', 'Passwords do not match.', 'err');
+    if (p1.length < 10) return msg('setup-msg', 'Use at least 10 characters for the password.', 'err');
+    msg('setup-msg', '');
+    busy('Checking the token with GitHub…');
+    TOKEN = token;
+    gh('/user').then(function (me) {
+      if (me.login.toLowerCase() !== user.toLowerCase()) throw new Error('This token belongs to "' + me.login + '", not "' + user + '".');
+      return gh(repoPath(''));
+    }).then(function (repo) {
+      BRANCH = repo.default_branch || 'main';
+      return saveEncrypted(user, p1, token);
+    }).then(function () {
+      $('s-token').value = ''; $('s-pass').value = ''; $('s-pass2').value = '';
+      busy('');
+      show('view-app');
+      openList();
+    }).catch(function (err) {
+      TOKEN = null; busy('');
+      msg('setup-msg', err.status === 404 ? 'The token cannot see the repository. Check "Only select repositories" includes ' + REPO + '.' : err.message, 'err');
+    });
+  });
+
+  /* ---------------- login ---------------- */
+  var fails = 0, lockedUntil = 0;
+  $('login-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (Date.now() < lockedUntil) return msg('login-msg', 'Too many attempts. Wait a moment and try again.', 'err');
+    var user = $('l-user').value.trim(), pass = $('l-pass').value;
+    busy('Unlocking…');
+    unlock(user, pass).then(function (token) {
+      fails = 0; $('l-pass').value = ''; msg('login-msg', '');
+      return startSession(token);
+    }).then(function () { busy(''); }).catch(function (err) {
+      busy('');
+      fails++; if (fails >= 5) { lockedUntil = Date.now() + 30000; fails = 0; }
+      msg('login-msg', err.message, 'err');
+    });
+  });
+  $('reset-device').addEventListener('click', function () {
+    if (!confirm('Remove the saved login from this browser and set up again with a GitHub token?')) return;
+    localStorage.removeItem(STORE);
+    show('view-setup');
+  });
+  $('lock-btn').addEventListener('click', function () {
+    TOKEN = null; posts = [];
+    $('post-list').innerHTML = '';
+    try { $('l-user').value = JSON.parse(localStorage.getItem(STORE)).user; } catch (e) {}
+    msg('login-msg', '');
+    show('view-login');
+  });
+
+  /* ---------------- list ---------------- */
+  function openList() {
+    $('view-editor').hidden = true; $('view-list').hidden = false;
+    $('post-list').innerHTML = '<p class="muted">Loading…</p>';
+    loadIndex().then(function (list) {
+      posts = sortPosts(list);
+      renderList();
+    }).catch(function (e) { msg('list-msg', e.message, 'err'); });
+  }
+  function renderList() {
+    if (!posts.length) {
+      $('post-list').innerHTML = '<div class="card"><p style="margin:0 0 12px"><b>No posts yet.</b></p><p class="muted" style="margin:0">Click “New post” to write your first one.</p></div>';
+      return;
+    }
+    $('post-list').innerHTML = posts.map(function (p) {
+      return '<div class="post-row"><div><h3>' + MD.esc(p.title) + (p.draft ? '<span class="badge">Draft</span>' : '') + '</h3>' +
+        '<div class="small muted">' + MD.esc(p.date) + ' · ' + (p.minutes || 1) + ' min read' + (p.tags && p.tags.length ? ' · ' + MD.esc(p.tags.join(', ')) : '') + '</div></div>' +
+        '<div class="row-actions">' +
+        (p.draft ? '' : '<a class="btn ghost" href="../#blog/' + encodeURIComponent(p.slug) + '" target="_blank" rel="noopener">View ↗</a>') +
+        '<button class="btn" type="button" data-edit="' + MD.esc(p.slug) + '">Edit</button>' +
+        '<button class="btn danger" type="button" data-del="' + MD.esc(p.slug) + '">Delete</button></div></div>';
+    }).join('');
+  }
+  $('post-list').addEventListener('click', function (e) {
+    var ed = e.target.closest('[data-edit]'), del = e.target.closest('[data-del]');
+    if (ed) openEditor(ed.getAttribute('data-edit'));
+    if (del) deletePost(del.getAttribute('data-del'));
+  });
+  $('refresh-btn').addEventListener('click', openList);
+  $('new-btn').addEventListener('click', function () { openEditor(null); });
+
+  function deletePost(slug) {
+    var p = posts.filter(function (x) { return x.slug === slug; })[0];
+    if (!p || !confirm('Delete "' + p.title + '"? This removes it from the website.')) return;
+    busy('Deleting…');
+    loadIndex().then(function (list) {
+      var next = list.filter(function (x) { return x.slug !== slug; });
+      return commitFiles([
+        { path: 'posts/' + slug + '.md', remove: true },
+        { path: 'posts/index.json', content: JSON.stringify(sortPosts(next), null, 2) + '\n' }
+      ], 'Delete post: ' + p.title).then(function () { posts = sortPosts(next); });
+    }).then(function () {
+      busy(''); renderList(); msg('list-msg', 'Deleted. The site updates in 1–2 minutes.', 'ok');
+    }).catch(function (e) { busy(''); msg('list-msg', e.message, 'err'); });
+  }
+
+  /* ---------------- editor ---------------- */
+  function today() { var d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset()); return d.toISOString().slice(0, 10); }
+  function draftKey() { return 'ak-admin-draft:' + (editing || 'new'); }
+  function collect() {
+    return {
+      title: $('e-title').value.trim(), slug: $('e-slug').value.trim(), date: $('e-date').value || today(),
+      tags: $('e-tags').value.split(',').map(function (t) { return t.trim(); }).filter(Boolean),
+      summary: $('e-summary').value.trim(), body: $('e-body').value, draft: $('e-draft').checked
+    };
+  }
+  function fill(d) {
+    $('e-title').value = d.title || ''; $('e-slug').value = d.slug || ''; $('e-date').value = d.date || today();
+    $('e-tags').value = (d.tags || []).join(', '); $('e-summary').value = d.summary || '';
+    $('e-body').value = d.body || ''; $('e-draft').checked = !!d.draft;
+    updateSlugHint(); updatePreview();
+  }
+  function openEditor(slug) {
+    editing = slug;
+    msg('editor-msg', '');
+    $('view-list').hidden = true; $('view-editor').hidden = false;
+    $('e-slug').readOnly = !!slug;
+    $('publish-btn').textContent = slug ? 'Update' : 'Publish';
+    window.scrollTo(0, 0);
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem(draftKey()) || 'null'); } catch (e) {}
+    if (!slug) { fill(saved || { date: today() }); $('e-title').focus(); return; }
+    var meta = posts.filter(function (p) { return p.slug === slug; })[0] || {};
+    busy('Loading post…');
+    readFile('posts/' + slug + '.md').then(function (body) {
+      busy('');
+      var d = { title: meta.title, slug: slug, date: meta.date, tags: meta.tags, summary: meta.summary, body: body || '', draft: meta.draft };
+      if (saved && saved.body !== d.body && confirm('You have unsaved changes to this post in this browser. Restore them?')) d = saved;
+      fill(d);
+    }).catch(function (e) { busy(''); msg('editor-msg', e.message, 'err'); });
+  }
+  $('back-btn').addEventListener('click', function () { openList(); });
+
+  var autosaveTimer;
+  function autosave() {
+    clearTimeout(autosaveTimer);
+    autosaveTimer = setTimeout(function () {
+      try { localStorage.setItem(draftKey(), JSON.stringify(collect())); } catch (e) {}
+    }, 400);
+  }
+  function updateSlugHint() { $('slug-hint').textContent = 'abhishek-kumawat-1.github.io/#blog/' + ($('e-slug').value || '…'); }
+  $('e-title').addEventListener('input', function () {
+    if (!editing && !$('e-slug').dataset.touched) $('e-slug').value = MD.slugify($('e-title').value);
+    updateSlugHint(); updatePreview(); autosave();
+  });
+  $('e-slug').addEventListener('input', function () {
+    $('e-slug').dataset.touched = '1';
+    $('e-slug').value = $('e-slug').value.toLowerCase().replace(/[^a-z0-9-]/g, '-').replace(/-+/g, '-');
+    updateSlugHint(); autosave();
+  });
+  ['e-date', 'e-tags', 'e-summary', 'e-draft'].forEach(function (id) { $(id).addEventListener('input', autosave); $(id).addEventListener('change', autosave); });
+  $('e-body').addEventListener('input', function () { updatePreview(); autosave(); });
+
+  /* preview */
+  var mode = 'write';
+  function setMode(m) {
+    mode = m;
+    document.querySelectorAll('[data-mode]').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-mode') === m); });
+    $('e-body').hidden = m === 'preview';
+    $('e-preview').hidden = m === 'write';
+    $('panes').classList.toggle('split', m === 'split');
+    updatePreview();
+  }
+  document.querySelectorAll('[data-mode]').forEach(function (b) { b.addEventListener('click', function () { setMode(b.getAttribute('data-mode')); }); });
+  function updatePreview() {
+    if (mode === 'write') return;
+    var html = '<h1 class="pt">' + MD.esc($('e-title').value || 'Untitled') + '</h1>' + MD.render($('e-body').value);
+    var box = $('e-preview');
+    box.innerHTML = html;
+    box.querySelectorAll('img').forEach(function (img) {
+      var src = img.getAttribute('src');
+      if (localImages[src]) img.src = localImages[src];
+      else if (src && src.charAt(0) === '/') img.src = '..' + src;
+    });
+  }
+
+  /* toolbar */
+  function wrapSel(before, after, placeholder) {
+    var ta = $('e-body'), s = ta.selectionStart, e = ta.selectionEnd, v = ta.value;
+    var sel = v.slice(s, e) || placeholder || '';
+    ta.value = v.slice(0, s) + before + sel + after + v.slice(e);
+    ta.focus(); ta.selectionStart = s + before.length; ta.selectionEnd = s + before.length + sel.length;
+    ta.dispatchEvent(new Event('input'));
+  }
+  function prefixLines(prefixFn) {
+    var ta = $('e-body'), v = ta.value, s = v.lastIndexOf('\n', ta.selectionStart - 1) + 1, e = ta.selectionEnd;
+    var block = v.slice(s, e) || 'Text';
+    var out = block.split('\n').map(function (l, i) { return prefixFn(i) + l.replace(/^(#{1,6}\s|>\s?|[-*+]\s|\d+\.\s)/, ''); }).join('\n');
+    ta.value = v.slice(0, s) + out + v.slice(e);
+    ta.focus(); ta.selectionStart = s; ta.selectionEnd = s + out.length;
+    ta.dispatchEvent(new Event('input'));
+  }
+  function insertAtCursor(text) {
+    var ta = $('e-body'), s = ta.selectionStart, v = ta.value;
+    var pre = s > 0 && v.charAt(s - 1) !== '\n' ? '\n\n' : '';
+    ta.value = v.slice(0, s) + pre + text + '\n' + v.slice(ta.selectionEnd);
+    ta.focus(); ta.selectionStart = ta.selectionEnd = s + pre.length + text.length + 1;
+    ta.dispatchEvent(new Event('input'));
+  }
+  document.querySelectorAll('[data-md]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      switch (b.getAttribute('data-md')) {
+        case 'bold': return wrapSel('**', '**', 'bold text');
+        case 'italic': return wrapSel('*', '*', 'italic text');
+        case 'h2': return prefixLines(function () { return '## '; });
+        case 'h3': return prefixLines(function () { return '### '; });
+        case 'ul': return prefixLines(function () { return '- '; });
+        case 'ol': return prefixLines(function (i) { return (i + 1) + '. '; });
+        case 'quote': return prefixLines(function () { return '> '; });
+        case 'code': return wrapSel('\n```\n', '\n```\n', 'code');
+        case 'link':
+          var url = prompt('Link URL', 'https://');
+          if (url) wrapSel('[', '](' + url.trim() + ')', 'link text');
+          return;
+      }
+    });
+  });
+  $('e-body').addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'b') { e.preventDefault(); wrapSel('**', '**', 'bold text'); }
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'i') { e.preventDefault(); wrapSel('*', '*', 'italic text'); }
+  });
+
+  /* image upload: committed straight to /posts/images */
+  $('img-btn').addEventListener('click', function () { $('img-input').click(); });
+  $('img-input').addEventListener('change', function () {
+    var file = this.files[0]; this.value = '';
+    if (!file) return;
+    if (file.size > 5 * 1024 * 1024) return msg('editor-msg', 'Images must be under 5 MB. Try compressing it first.', 'err');
+    var ext = (file.name.split('.').pop() || 'png').toLowerCase().replace(/[^a-z0-9]/g, '');
+    var name = today() + '-' + (MD.slugify(file.name.replace(/\.[^.]+$/, '')) || 'image') + '-' + Math.random().toString(36).slice(2, 6) + '.' + ext;
+    var path = '/posts/images/' + name;
+    var reader = new FileReader();
+    reader.onload = function () {
+      var data = String(reader.result).split(',')[1];
+      busy('Uploading image…');
+      commitFiles([{ path: path.slice(1), content: data, encoding: 'base64' }], 'Add image ' + name).then(function () {
+        busy('');
+        localImages[path] = URL.createObjectURL(file);
+        var alt = prompt('Describe the image (alt text)', '') || '';
+        insertAtCursor('![' + alt.replace(/[\[\]]/g, '') + '](' + path + ')');
+        msg('editor-msg', 'Image uploaded.', 'ok');
+      }).catch(function (e) { busy(''); msg('editor-msg', e.message, 'err'); });
+    };
+    reader.readAsDataURL(file);
+  });
+
+  /* publish */
+  function autoSummary(body) {
+    var t = MD.plain(body);
+    return t.length <= 180 ? t : t.slice(0, 180).replace(/\s+\S*$/, '') + '…';
+  }
+  $('publish-btn').addEventListener('click', function () {
+    var d = collect();
+    if (!d.title) return msg('editor-msg', 'Add a title first.', 'err');
+    if (!d.body.trim()) return msg('editor-msg', 'The post is empty.', 'err');
+    var slug = editing || MD.slugify(d.slug || d.title);
+    if (!slug) return msg('editor-msg', 'The URL slug is empty. Use letters or numbers.', 'err');
+    busy(editing ? 'Updating…' : 'Publishing…');
+    loadIndex().then(function (list) {
+      if (!editing) {
+        var base = slug, n = 2;
+        while (list.some(function (p) { return p.slug === slug; })) slug = base + '-' + (n++);
+      }
+      var entry = {
+        slug: slug, title: d.title, date: d.date,
+        summary: d.summary || autoSummary(d.body),
+        tags: d.tags, minutes: MD.readingMinutes(d.body), draft: d.draft, updated: new Date().toISOString()
+      };
+      if (!entry.draft) delete entry.draft;
+      var next = list.filter(function (p) { return p.slug !== slug; }).concat([entry]);
+      return commitFiles([
+        { path: 'posts/' + slug + '.md', content: d.body.replace(/\s+$/, '') + '\n' },
+        { path: 'posts/index.json', content: JSON.stringify(sortPosts(next), null, 2) + '\n' }
+      ], (editing ? 'Update post: ' : 'New post: ') + d.title).then(function () {
+        var wasUpdate = !!editing;
+        posts = sortPosts(next);
+        try { localStorage.removeItem(draftKey()); } catch (e) {}
+        editing = slug;
+        $('e-slug').value = slug; $('e-slug').readOnly = true; $('publish-btn').textContent = 'Update';
+        busy('');
+        msg('editor-msg', d.draft ? 'Saved as a draft (not shown on the site).' : (wasUpdate ? 'Updated!' : 'Published!') + ' Live at /#blog/' + slug + ' in about 1–2 minutes.', 'ok');
+      });
+    }).catch(function (e) { busy(''); msg('editor-msg', e.message, 'err'); });
+  });
+
+  window.addEventListener('beforeunload', function (e) {
+    if (!$('view-editor').hidden && localStorage.getItem(draftKey())) { e.preventDefault(); e.returnValue = ''; }
+  });
+
+  /* ---------------- boot ---------------- */
+  if (!window.crypto || !crypto.subtle) {
+    document.body.innerHTML = '<p style="padding:24px">This browser does not support secure login. Please use an up-to-date Chrome, Edge, Firefox or Safari.</p>';
+    return;
+  }
+  var stored = null;
+  try { stored = JSON.parse(localStorage.getItem(STORE) || 'null'); } catch (e) {}
+  if (stored) { $('l-user').value = stored.user; show('view-login'); $('l-pass').focus(); }
+  else show('view-setup');
+})();
+</script>
+</body>
+</html>
