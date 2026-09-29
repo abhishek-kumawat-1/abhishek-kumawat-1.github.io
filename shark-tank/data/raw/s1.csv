@@ -1,0 +1,122 @@
+season,episode,pitch_no,brand,idea,city,ask_amount_lakh,ask_equity_pct,deal,deal_equity_amount_lakh,deal_debt_lakh,deal_equity_pct,royalty_or_other,sharks
+1,1,1,BluePine Industries,Frozen momos,Faridabad,50.0,5.0,Yes,75.0,0,16.0,,Aman Gupta; Ashneer Grover; Peyush Bansal
+1,1,2,Booz Scooters,E-bike rental for private campuses,Ahmedabad,40.0,15.0,Yes,40.0,0,50.0,,Ashneer Grover; Peyush Bansal
+1,1,3,Heart Up My Sleeves,Detachable sleeves,New Delhi,25.0,10.0,Yes,25.0,0,30.0,,Anupam Mittal; Peyush Bansal
+1,2,4,Tagz Foods,Healthy potato chips,Bengaluru,70.0,1.0,Yes,70.0,0,2.75,,Ashneer Grover
+1,2,5,Head and Heart,Brain development course,,50.0,5.0,No,,,,,
+1,2,6,Agri Tourism,Rural tourism,,50.0,5.0,No,,,,,
+1,3,7,qZense Labs,Food freshness detector,Bengaluru,100.0,0.25,No,,,,,
+1,3,8,Peeschute,Disposable urine bag,Jalna,75.0,4.0,Yes,75.0,0,6.0,,Aman Gupta
+1,3,9,NOCD,Energy drink,Bengaluru,50.0,2.0,Yes,20.0,30.0,15.0,,Ghazal Alagh
+1,4,10,CosIQ,Intelligent skincare,Delhi,50.0,7.0,Yes,50.0,0,25.0,,Anupam Mittal; Peyush Bansal
+1,4,11,JhaJi Achaar,Pickles,Darbhanga,50.0,10.0,No,,,,,
+1,4,12,Bummer,Underwear,Ahmedabad,75.0,4.0,Yes,75.0,0,7.5,,Aman Gupta; Peyush Bansal
+1,5,13,Revamp Moto,E-bike,Nashik,100.0,1.0,Yes,100.0,0,1.5,,Anupam Mittal; Aman Gupta
+1,5,14,Hungry Heads,Maggi restaurant,Mumbai,50.0,5.0,No,,,,,
+1,5,15,Shrawani Engineers,Belly button shaper,Nagpur,10.0,20.0,No,,,,,
+1,6,16,Skippi Pops,Ice pops,Hyderabad,45.0,5.0,Yes,100.0,0,15.0,,Anupam Mittal; Aman Gupta; Ashneer Grover; Namita Thapar; Peyush Bansal
+1,6,17,Menstrupedia,Menstrual awareness comic,Ahmedabad,50.0,10.0,Yes,50.0,0,20.0,,Peyush Bansal
+1,6,18,Hecolll,Pollution-resistant fabric,Hyderabad,100.0,1.0,No,,,,,
+1,7,19,Raising Superstars,Child development app,Mumbai,100.0,2.0,Yes,100.0,0,4.0,,Aman Gupta; Ashneer Grover
+1,7,20,Torchit,Products for visually impaired,Ahmedabad,75.0,1.0,No,,,,,
+1,7,21,La Kheer Deli,Flavoured kheer,Pune,50.0,7.5,No,,,,,
+1,8,22,Beyond Snack,Kerala banana chips,Mavelikara,50.0,2.5,Yes,50.0,0,2.5,,Aman Gupta; Ashneer Grover
+1,8,23,Vivalyf Innovations (Easy Life),Prickless diabetes testing,,56.0,7.5,Yes,56.0,0,33.33,,Anupam Mittal; Peyush Bansal
+1,8,24,Motion Breeze,Smart electric motorcycle,Vadodara,30.0,3.0,Yes,30.0,0,6.0,,Ashneer Grover
+1,9,25,Altor,Smart helmets,,50.0,5.0,Yes,50.0,0,7.0,,Aman Gupta; Peyush Bansal
+1,9,26,Ariro,Wooden toys,,50.0,2.5,Yes,50.0,0,10.0,,Aman Gupta; Peyush Bansal
+1,9,27,Kabira Handmade,Healthy oils,,100.0,5.0,No,,,,,
+1,10,28,Nuutjob,Male intimate hygiene,,25.0,5.0,Yes,25.0,0,20.0,,Aman Gupta; Peyush Bansal; Ghazal Alagh
+1,10,29,Meatyour,Eggs,,30.0,5.0,Yes,30.0,0,20.0,,Anupam Mittal; Aman Gupta; Peyush Bansal
+1,10,30,EventBeep,Student community app,,30.0,2.0,Yes,30.0,0,3.0,,Aman Gupta; Ashneer Grover; Peyush Bansal
+1,11,31,Gopal's 56,Fiber ice cream,,30000.0,25.0,No,,,,,
+1,11,32,ARRCOAT Surface Textures,Wall textures,,50.0,5.0,Yes,50.0,0,15.0,,Anupam Mittal
+1,11,33,Farda,Customised streetwear,,30.0,10.0,Yes,30.0,0,20.0,,Aman Gupta; Peyush Bansal
+1,12,34,Auli Lifestyle,Cosmetics,,75.0,4.0,Yes,75.0,0,15.0,,Vineeta Singh
+1,12,35,SweeDesi,Indian sweets,,40.0,3.0,No,,,,,
+1,12,36,LOKA,Metaverse app,,40.0,5.0,Yes,40.0,0,24.0,,Anupam Mittal; Aman Gupta; Peyush Bansal
+1,13,37,Annie,Braille literacy device,,30.0,0.5,Yes,105.0,0,3.0,,Anupam Mittal; Namita Thapar; Peyush Bansal
+1,13,38,Caragreen,Eco-friendly boxes,,50.0,10.0,Yes,50.0,0,20.0,,Anupam Mittal; Peyush Bansal
+1,13,39,The Yarn Bazaar,Yarn trading app,,50.0,2.0,Yes,100.0,0,10.0,,Anupam Mittal; Aman Gupta; Ashneer Grover; Peyush Bansal
+1,14,40,The Renal Project,Home dialysis,,100.0,3.0,Yes,100.0,0,6.0,,Aman Gupta; Peyush Bansal
+1,14,41,Morikko Pure Foods,Healthy snacks,,100.0,3.0,No,,,,,
+1,14,42,Good Good Piggy Bank,EdFinTech,,45.0,5.0,No,,,,,
+1,15,43,Hammer Lifestyle,Smart audio products,,30.0,3.0,Yes,100.0,0,40.0,,Aman Gupta
+1,15,44,PNT Robotics,Robotics & automation,,50.0,4.0,Yes,25.0,25.0,25.0,,Ghazal Alagh
+1,15,45,Cocofit,Coconut beverage franchise,,,5.0,Yes,,0,5.0,amount unverified,Anupam Mittal; Aman Gupta; Namita Thapar
+1,16,46,Bamboo India,Bamboo products,,80.0,4.0,Yes,50.0,30.0,3.5,,Anupam Mittal; Ashneer Grover
+1,16,47,Flying Furr,Dog hygiene,,75.0,7.0,No,,,,,
+1,16,48,Beyond Water,Liquid water enhancer,,75.0,4.0,Yes,75.0,0,15.0,,Aman Gupta; Peyush Bansal
+1,16,49,Let's Try,Healthy snacks,,45.0,2.0,Yes,45.0,0,12.0,,Anupam Mittal; Aman Gupta
+1,17,50,Find Your Kicks India,Sneaker resale,,50.0,10.0,Yes,50.0,0,25.0,,Anupam Mittal; Aman Gupta; Ashneer Grover; Namita Thapar; Peyush Bansal
+1,17,51,Aas Vidyalaya,EdTech app,,150.0,3.0,Yes,150.0,0,15.0,,Ashneer Grover; Namita Thapar; Peyush Bansal
+1,17,52,Outbox,Surprise planning,,50.0,5.0,No,,,,,
+1,17,53,RoadBounce,Pothole detection software,,80.0,10.0,Yes,80.0,0,20.0,,Ghazal Alagh
+1,18,54,Mommy's Kitchen,Thin-crust pizza,,90.0,3.0,No,,,,,
+1,18,55,India Hemp and Co,Hemp food products,,50.0,4.0,No,,,,,
+1,18,56,Dandera Technologies,Electric auto,,100.0,1.0,Yes,1.0,99.0,1.0,,Ashneer Grover
+1,18,57,Anthyesti,Funeral services,,50.0,2.0,No,,,,,
+1,19,58,Ethik,Leather-free shoes,,15.0,5.0,No,,,,,
+1,19,59,WeSTOCK,Livestock health AI,,50.0,5.0,Yes,60.0,0,10.0,,Aman Gupta; Ashneer Grover; Namita Thapar; Peyush Bansal
+1,19,60,KetoIndia,Medical keto diets,,150.0,1.25,No,,,,,
+1,19,61,Magic Lock,LPG cylinder lock,,120.0,8.0,No,,,,,
+1,20,62,The State Plate,Regional delicacies,,65.0,2.0,Yes,40.0,25.0,3.0,,Ghazal Alagh
+1,20,63,Bakarmax,Comics & animation,,35.0,5.0,No,,,,,
+1,20,64,IN A CAN,Canned cocktails,,50.0,2.0,Yes,100.0,0,10.0,,Anupam Mittal; Aman Gupta; Ashneer Grover; Namita Thapar; Peyush Bansal
+1,21,65,Get-A-Whey,Sugar-free ice cream,,100.0,8.0,Yes,100.0,0,15.0,,Aman Gupta; Ashneer Grover; Vineeta Singh
+1,21,66,Sid07 Designs,Inventions,,47.0,10.0,Yes,25.0,22.0,75.0,,Vineeta Singh
+1,21,67,The Quirky Naari,Customised apparel,,35.0,5.0,Yes,35.0,0,24.0,,Anupam Mittal; Peyush Bansal
+1,22,68,Hair Originals,Natural hair extensions,,60.0,2.0,Yes,60.0,0,4.0,,Anupam Mittal; Ashneer Grover; Namita Thapar
+1,22,69,Poo de Cologne,Toilet spray,,75.0,5.0,No,,,,,
+1,22,70,Moonshine Meads,Mead,,80.0,0.5,No,,,,,
+1,22,71,Falhari,Fresh fruits,,50.0,2.0,No,,,,,
+1,23,72,Namhya Foods,Ayurvedic foods,,100.0,5.0,Yes,50.0,50.0,10.0,,Aman Gupta
+1,23,73,Urban Monkey,Streetwear,,100.0,1.0,No,,,,,
+1,23,74,Guardian Gears,Motorcycle luggage,,30.0,5.0,No,,,,,
+1,23,75,Modern Myth,Bags,,75.0,5.0,No,,,,,
+1,24,76,The Sass Bar,Gifts,,40.0,8.0,Yes,50.0,0,35.0,,Anupam Mittal; Ghazal Alagh
+1,24,77,KG Agrotech,Agri innovations,,30.0,10.0,Yes,10.0,20.0,40.0,,Ashneer Grover
+1,24,78,Nuskha Kitchen,Homemade foods,,20.0,10.0,No,,,,,
+1,25,79,PawsIndia,Dog products,,50.0,4.0,Yes,50.0,0,15.0,,Anupam Mittal
+1,25,80,Sunfox Technologies,Portable ECG,,100.0,2.0,Yes,100.0,0,6.0,,Anupam Mittal; Aman Gupta; Ashneer Grover; Namita Thapar; Peyush Bansal
+1,25,81,Alpino,Peanut products,,150.0,2.0,No,,,,,
+1,26,82,Isak Fragrances,Perfumes,,50.0,8.0,Yes,50.0,0,50.0,,Ashneer Grover
+1,26,83,Julaa Automation,Automatic cradle,,50.0,10.0,No,,,,,
+1,26,84,Rare Planet,Handicrafts,,65.0,1.0,Yes,65.0,0,3.0,,Aman Gupta
+1,27,85,Theka Coffee,Coffee products,,50.0,10.0,No,,,,,
+1,27,86,Watt Technovations,Ventilated PPE kits,,,2.0,Yes,,0,4.0,amount unverified,Anupam Mittal; Aman Gupta; Ashneer Grover; Peyush Bansal
+1,27,87,Aliste Technologies,Home automation,,60.0,5.0,No,,,,,
+1,27,88,Insurance Samadhan,Insurance claim help,,100.0,1.0,Yes,100.0,0,4.0,,Ashneer Grover
+1,28,89,Humpy A2,A2 milk products,,75.0,4.0,Yes,100.0,0,15.0,,Ashneer Grover; Namita Thapar; Peyush Bansal
+1,28,90,Kunafa World,Kunafa,,90.0,5.0,No,,,,,
+1,28,91,Gold Safe Solutions,Anti-suicide fan rod,,50.0,5.0,Yes,50.0,0,30.0,,Ashneer Grover; Namita Thapar; Peyush Bansal
+1,29,92,Wakao Foods,Jackfruit products,,75.0,5.0,Yes,75.0,0,21.0,,Aman Gupta; Namita Thapar; Peyush Bansal
+1,29,93,PDD Falcon,Stainless steel items,,75.0,3.0,No,,,,,
+1,29,94,PlayBox TV,Streaming aggregator,,100.0,3.5,No,,,,,
+1,30,95,Sippline,Drinking shields,,75.0,15.0,No,,,,,
+1,30,96,Kabaddi Adda,Kabaddi app,,80.0,1.0,Yes,80.0,0,6.0,,Namita Thapar; Peyush Bansal
+1,30,97,Shades of Spring,Flowers,,300.0,1.0,No,,,,,
+1,30,98,Scholify,Scholarship platform,,50.0,7.5,No,,,,,
+1,31,99,Scrapshala,Upcycled scrap products,,50.0,10.0,No,,,,,
+1,31,100,Sabjikothi,Vegetable storage,,60.0,2.5,No,,,,,
+1,31,101,AyuRythm,Ayurvedic wellness app,,75.0,2.0,Yes,75.0,0,2.68,,Aman Gupta
+1,31,102,Astrix,Smart locks,,75.0,3.0,No,,,,,
+1,32,103,Thea & Sid,Proposal planning,,80.0,7.0,No,,,,,
+1,32,104,Experiential Etc,Tech-layered advertising,,200.0,4.0,No,,,,,
+1,32,105,Grow Fitter,Fitness rewards app,,50.0,1.0,Yes,50.0,0,2.0,,Aman Gupta
+1,32,106,MedTech,Portable ophthalmic devices,,35.0,6.0,No,,,,,
+1,33,107,Colour Me Mad,Insoles,,40.0,10.0,Yes,40.0,0,25.0,,Namita Thapar
+1,33,108,Mavi's,Vegan fermented food,,40.0,5.0,No,,,,,
+1,33,109,Tweek Labs,Sportswear,,40.0,2.0,Yes,60.0,0,10.0,,Anupam Mittal; Ashneer Grover; Peyush Bansal
+1,33,110,Proxgy,VR / AR,,35.0,1.0,Yes,100.0,0,10.0,,Ashneer Grover; Peyush Bansal
+1,34,111,Nomad Food Project,Bacon jam,,40.0,10.0,Yes,40.0,0,20.0,,Ashneer Grover; Namita Thapar; Peyush Bansal; Ghazal Alagh
+1,34,112,Twee in One,Reversible clothing,,30.0,7.5,No,,,,,
+1,34,113,Green Protein,Plant-based protein,,60.0,2.0,No,,,,,
+1,34,114,On2Cook,Fast cooking device,,100.0,1.0,No,,,,,
+1,35,115,Jain Shikanji,Lemonade,,40.0,8.0,Yes,40.0,0,30.0,,Anupam Mittal; Aman Gupta; Ashneer Grover; Vineeta Singh
+1,35,116,Woloo,Washroom finder,,50.0,4.0,No,,,,,
+1,35,117,Elcare India,Elder care,,100.0,2.5,No,,,,,
+1,36,118,Sneakare,Sneaker care,,20.0,5.0,Yes,21.0,0,12.0,,Aman Gupta; Ashneer Grover; Peyush Bansal
+1,36,119,French Crown,Menswear,,150.0,0.33,No,,,,,
+1,36,120,Store My Goods,Storage services,,100.0,1.75,Yes,50.0,50.0,4.0,,Ashneer Grover; Namita Thapar
+1,36,121,Devnagri,AI translation,,100.0,1.0,No,,,,,

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Into the Tank — Shark Tank India Pitch Insights (S1–S5)</title>
+<meta name="description" content="Unofficial fan analysis of every Shark Tank India pitch from Seasons 1 to 5: deals, valuations, sharks and trends.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#log">Skip to pitch log</a>
+
+<header class="hero">
+  <svg class="hero-art" viewBox="0 0 1440 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="currentColor" stroke-width="1.5" class="sonar">
+      <circle cx="1160" cy="270" r="90"/><circle cx="1160" cy="270" r="170"/>
+      <circle cx="1160" cy="270" r="250"/><circle cx="1160" cy="270" r="330"/>
+    </g>
+    <path class="fin" d="M1060 300 C1110 270 1150 190 1175 120 C1190 185 1215 250 1290 300Z"/>
+    <path class="wave" d="M0 300 C120 280 240 320 360 300 S600 280 720 300 S960 320 1080 300 S1320 280 1440 300"/>
+    <path class="wave faint" d="M0 316 C120 296 240 336 360 316 S600 296 720 316 S960 336 1080 316 S1320 296 1440 316"/>
+  </svg>
+  <div class="wrap hero-inner">
+    <div class="topline">
+      <span class="topleft"><a class="back" href="../#projects">← Abhishek Kumawat</a><span class="eyebrow">Unofficial fan analysis · Seasons 1–5</span></span>
+      <a class="pill-link" href="data/pitches.csv" download>Download data (CSV)</a>
+    </div>
+    <h1>Into the Tank</h1>
+    <p class="lede">Every Shark Tank India pitch from Seasons 1 to 5, charted: who closed a deal, which sharks invested, and what the valuations really went for.</p>
+    <nav class="seasons" aria-label="Choose season" id="seasonTabs"></nav>
+    <div class="kpis" id="kpis"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="block" id="compareBlock">
+    <div class="head">
+      <div><span class="eyebrow teal">Season by season</span><h2>How the tank changed</h2></div>
+      <p class="aside">Deal rate, money committed, and how much of the asked valuation founders kept (median).</p>
+    </div>
+    <div class="grid3" id="compare"></div>
+  </section>
+
+  <section class="block">
+    <div class="head">
+      <div><span class="eyebrow teal">The sharks</span><h2>Who invested the most</h2></div>
+      <p class="aside">Money per shark is an estimate: each deal's amount (equity + debt) split equally among the sharks in it. Guest sharks appeared in fewer episodes, so their totals aren't directly comparable.</p>
+    </div>
+    <div class="panel">
+      <div class="table-scroll">
+        <table class="board" id="sharks">
+          <thead><tr><th scope="col">Shark</th><th scope="col" class="w-bar">Deals joined</th><th scope="col" class="num">Est. ₹ committed</th><th scope="col" class="num">Solo deals</th><th scope="col" class="num">Seasons</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="block grid2">
+    <div class="panel pad">
+      <span class="eyebrow teal">The ask</span>
+      <h3>Deal rate by asking valuation</h3>
+      <p class="muted">Share of pitches that closed a deal, grouped by the valuation the founders asked for.</p>
+      <div class="cols" id="askBands"></div>
+    </div>
+    <div class="panel pad">
+      <span class="eyebrow teal">Hunting in packs</span>
+      <h3>Sharks per deal</h3>
+      <p class="muted">How many sharks invested in each deal.</p>
+      <div class="cols" id="pack"></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="head">
+      <div><span class="eyebrow coral">Valuation reality check</span><h2>What founders asked for vs. what they got</h2></div>
+      <div class="legend"><span><i class="sw track"></i>Asked valuation (100%)</span><span><i class="sw coral"></i>Valuation at the deal</span></div>
+    </div>
+    <div class="split">
+      <div class="panel pad stat-card" id="valStat"></div>
+      <div class="panel pad">
+        <div class="tabs small" role="tablist" id="valTabs">
+          <button role="tab" data-v="cuts" aria-selected="true">Biggest cuts</button>
+          <button role="tab" data-v="kept" aria-selected="false">Closest to the ask</button>
+        </div>
+        <div id="valRows"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="epBlock">
+    <div class="head">
+      <div><span class="eyebrow teal">Episode by episode</span><h2>Every pitch, every episode</h2></div>
+      <div class="legend"><span><i class="dot on"></i>Deal</span><span><i class="dot off"></i>No deal</span></div>
+    </div>
+    <div class="panel pad"><div class="episodes" id="episodes"></div><p class="muted small-note">Hover over or tap an episode to see its pitches.</p></div>
+  </section>
+
+  <section class="block" id="log">
+    <div class="head">
+      <div><span class="eyebrow teal">The pitch log</span><h2>All pitches</h2></div>
+      <p class="count" id="count"></p>
+    </div>
+    <div class="panel pad filters">
+      <label class="search"><span>Search</span><input id="q" type="search" placeholder="Brand or idea, e.g. momos" autocomplete="off"></label>
+      <div class="filter-row"><span class="flabel">Outcome</span><div class="chips" id="outcome"></div></div>
+      <div class="filter-row"><span class="flabel">Shark</span><div class="chips" id="sharkChips"></div></div>
+    </div>
+    <div class="panel">
+      <div class="table-scroll tall">
+        <table class="log" id="logTable">
+          <thead><tr>
+            <th scope="col"><button data-sort="s">Season</button></th>
+            <th scope="col"><button data-sort="ep">Ep</button></th>
+            <th scope="col"><button data-sort="brand">Brand</button></th>
+            <th scope="col">Idea</th>
+            <th scope="col" class="num"><button data-sort="askVal">Ask</button></th>
+            <th scope="col">Deal</th>
+            <th scope="col" class="num"><button data-sort="dealVal">Deal val.</button></th>
+            <th scope="col">Sharks</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="pager"><button id="more" type="button">Show more</button></div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <p>Unofficial fan analysis, not affiliated with or endorsed by Sony Pictures Networks India or the show's producers. It contains only facts about the deals and our own analysis; no video, images or transcripts. The data was compiled from public sources (Wikipedia season pages, cross-checked against fan archives and news reports) and may contain errors. If you spot one, please report it.</p>
+  <p>Valuations are implied from the equity cheque: amount ÷ equity %. Deals made mostly of debt, and asks below ₹1 lakh, are left out of the valuation figures.</p>
+</footer>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
+
+<script src="data/pitches.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

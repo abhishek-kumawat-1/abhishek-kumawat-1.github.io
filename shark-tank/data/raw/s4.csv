@@ -1,0 +1,157 @@
+season,episode,pitch_no,brand,idea,city,ask_amount_lakh,ask_equity_pct,deal,deal_equity_amount_lakh,deal_debt_lakh,deal_equity_pct,royalty_or_other,sharks
+4,1,1,FAE Beauty,Beauty and skincare products,,100,1,Yes,100,0,1.5,,Aman Gupta; Namita Thapar
+4,1,2,Confect,Vegan bakery products,,100,1,Yes,100,0,2,2% royalty until 1 Cr recouped,Namita Thapar
+4,1,3,Indulge,Digital concierge service for HNI,,50,1,No,,,,,
+4,2,4,BL Fabric,Online designer lehenga brand,,100,2,Yes,100,0,5,Equity reduces to 4% if revenue exceeds 15 Cr,Kunal Bahl; Ritesh Agarwal
+4,2,5,Culture Circle,Luxury fashion marketplace,,120,0.5,Yes,300,0,3,,Kunal Bahl; Ritesh Agarwal
+4,2,6,Nexera.health,Healthcare platform for corporates,,75,1,No,,,,,
+4,3,7,NOOE,Lifestyle luxury accessories brand,,50,1,Yes,500,0,51,,Peyush Bansal
+4,3,8,Go Zero,Zero sugar icecream brand,,100,1,Yes,100,0,1.5,,Aman Gupta
+4,3,9,Curve Electric,Public e-bike sharing system,,50,5,No,,,,,
+4,4,10,Gud World,Hygienic jaggery brand,,50,2,Yes,50,0,5,,Aman Gupta
+4,4,11,Airth,AC air purifier brand,,60,1,Yes,100,0,3.7,,Aman Gupta; Vineeta Singh
+4,4,12,OneDios,Request booking platform,,75,1.5,No,,,,,
+4,5,13,Innergize,Mental health wearable,,54,1.5,Yes,100,0,4.2,,Aman Gupta; Azhar Iqubal; Ritesh Agarwal
+4,5,14,Personal Touch Skincare,Lifestyle skincare brand,,150,1,No,,,,,
+4,5,15,KIWI Kisan Window,One stop solution for experiencing unique flavors of India,,50,1,Yes,250,0,10,,Kunal Bahl
+4,6,16,Tripole,Outdoor utility and apparel brand,,100,1,Yes,75,25,1.15,Debt @ 9% for 5 years,Ritesh Agarwal
+4,6,17,NeoSapien,AI powered wearable,,80,2.5,Yes,80,0,4,,Namita Thapar
+4,6,18,Miss Cheesecake,Cheesecake brand,,30,5,No,,,,,
+4,7,19,Speed Kitchen,Co-working cloud kitchen,,200,3,Yes,200,0,6,,Kunal Bahl; Ritesh Agarwal; Azhar Iqubal
+4,7,20,MudgarClub,Mudgar workshop and trainings,,50,10,Yes,50,0,12.5,,Ritesh Agarwal
+4,7,21,Imagimake,DIY activity and learning kits,,150,0.5,No,,,,,
+4,8,22,Beast Life,Nutrition supplements brand,,100,1,No,,,,,
+4,8,23,Go Devil,Online fashion brand,,80,2,No,,,,,
+4,8,24,Havintha,Hair and skin care brand,,50,2,No,,,,,
+4,9,25,Nurturing Green,Online plant nursery brand,,100,1,Yes,50,50,1.25,Debt @ 10% for 3 years,Vineeta Singh
+4,9,26,Kyari,Online plant nursery brand,,80,0.8,No,,,,,
+4,10,27,Project Clay,Online college counseling,,15,10,Yes,15,0,10,,Namita Thapar
+4,10,28,Demi Bikes,Electric bikes,,30,10,No,,,,,
+4,10,29,Pretty Little Shopp,Customised gifting brand,,30,10,No,,,,,
+4,11,30,Aquapeya,Ready to drink beverage brand,,70,2,Yes,70,0,3,1% royalty until 70 L recouped,Namita Thapar; Ritesh Agarwal
+4,11,31,Jarsh,Industrial safety equipment brand,,50,1,Yes,50,0,1.5,,Aman Gupta
+4,11,32,DACBY,Recommerce platform for gaming,,75,2.2,No,,,,,
+4,12,33,Shyle,Handcrafted silver jewellery brand,,70,1,Yes,70,0,1.5,0.5% royalty until 70 L recouped,Namita Thapar; Ritesh Agarwal
+4,12,34,Savani Heritage,Building / monuments restoring company,,300,1,Yes,100,200,0.8,Debt @ 10% for 3 years,Ritesh Agarwal
+4,12,35,SNEAKINN,Premium bag and shoe care brand,,90,3,Yes,90,0,6.5,,Anupam Mittal
+4,13,36,Fupro,Prosthetics company,,60,1,Yes,60,0,4,,Ritesh Agarwal; Namita Thapar; Aman Gupta
+4,13,37,Kanvas,India art inspired footwear brand,,60,6,No,,,,,
+4,13,38,EZO,Billing devices,,50.00001,0.33,No,,,,,
+4,14,39,7 Ring,Payment wearable smart ring,,75,1,Yes,75,0,1.5,1.5% advisory equity,Peyush Bansal; Vineeta Singh; Varun Dua
+4,14,40,The Future Animation,Animation studio,,50,2.5,Yes,50,0,10,,Peyush Bansal
+4,14,41,Ai.gnosis,AI diagnosis of autism,,50,1,Yes,100,0,8,,Peyush Bansal; Aman Gupta; Varun Dua
+4,15,42,Rosha,Wireless lighting brand,,60,1,Yes,60,0,4,1.5% royalty until 90 L recouped,Aman Gupta; Ritesh Agarwal
+4,15,43,Make My Payment,Automated payment reminder App,,30,3,No,,,,,
+4,15,44,Patchup,Vitamin patches brand,,50,1.5,Yes,50,0,2.27,,Anupam Mittal
+4,16,45,Tikitoro,Kids and teens skincare brand,,25,0.5,Yes,25,0,1,0.5% royalty until 25 L recouped,Namita Thapar
+4,16,46,Fitknees by Ashva,Orthopedic AI wearable sensor system,,50,1.25,Yes,50,0,4,,Vineeta Singh
+4,16,47,Aseem Sarees,Ready to wear saree brand,,50,2.5,Yes,50,0,10,,Anupam Mittal
+4,17,48,RBD,Agriculture equipment,,100,1,Yes,50,50,1,Debt @ 9% for 5 years,Namita Thapar; Ritesh Agarwal
+4,17,49,Midas Paint,Environment friendly paints,,300,5,No,,,,,
+4,17,50,Goodland,Pickleball equipments company,,80,4,Yes,80,0,6,0.5% royalty until 80 L recouped,Aman Gupta
+4,18,51,The Naturik co,Preservative free food brand,,50,2,Yes,400,0,22.2,,Aman Gupta; Vineeta Singh; Anupam Mittal; Kunal Bahl; Peyush Bansal
+4,18,52,Metashot,Mixed reality cricket bat,,80,1.5,Yes,160,0,5,,Vineeta Singh; Anupam Mittal
+4,18,53,Gabru Di Chaap,Soyachaap brand,,70,1,Yes,140,0,6,1% royalty until 1.4 Cr recouped,Vineeta Singh; Anupam Mittal; Peyush Bansal
+4,19,54,Yaan Man,Men's makeup brand,,50,6,Yes,100,0,20,,Anupam Mittal; Aman Gupta
+4,19,55,The Sonic Lamb,Headphones brand,,50,1,Yes,50,0,1,1% advisory equity,Peyush Bansal
+4,19,56,Woolah,Bagless green tea,,50,1.66,Yes,50,0,2.5,2.5% advisory equity,Aman Gupta
+4,20,57,EM5,Perfume brand,,70,2,Yes,100,0,10,,Aman Gupta
+4,20,58,Women Like U,Ladies swimwear and dress brand,,100,2,Yes,100,0,3,2% royalty until 1 Cr recouped,Aman Gupta
+4,20,59,Book Leaf Publishing,Book publishing company,,90,2,No,,,,,
+4,21,60,Str8bat,Deeptech sports company,,150,1,Yes,150,0,3.5,,Aman Gupta; Namita Thapar
+4,21,61,Rubys Makeup,Makeup brand,,100,2.5,Yes,100,0,8,,Kunal Bahl
+4,21,62,The Good Doll,Rag doll company,,50,5,No,,,,,
+4,22,63,Shickwheel,Mobile kitchen and foodtruck manufacturing,,75,1,No,,,,,
+4,22,64,Clapstore toys,Portable busyboards toys company,,80,4,Yes,100,0,10,,Peyush Bansal; Anupam Mittal; Vineeta Singh; Kunal Bahl; Aman Gupta
+4,22,65,Raheja Solar food processing,Food processing equipment manufacturers,,50,1,Yes,175,0,4.38,Split: Kunal 1.25 Cr for 3.13% + 1.88% advisory; Peyush & Vineeta 50 L for 1.25% + 0.75% advisory (totals computed),Kunal Bahl; Vineeta Singh; Peyush Bansal
+4,23,66,Wanderlooms,Adventure apparel for riders,,50,2.5,Yes,50,0,4,,Namita Thapar; Ritesh Agarwal
+4,23,67,Ugees,Liquid detergent for undergarments,,50,2.5,Yes,50,0,4,,Anupam Mittal
+4,23,68,Alt F co-working,Co-working spaces,,100,0.75,No,,,,,
+4,24,69,BurgerBae,D2C clothing brand,,100,2.5,Yes,200,0,20,,Kunal Bahl; Aman Gupta; Anupam Mittal
+4,24,70,Boba Bhai,K-Pop QSR brand,,50,0.33,Yes,90,0,1,,Namita Thapar; Viraj Bahl
+4,24,71,Hexafun,Lifestyle accessories brand,,100,4,No,,,,,
+4,25,72,Repeat Gud,Jaggery based food brand,,50,5,Yes,50,0,10,Conditional option to buy 5-10% more based on monthly revenue,Anupam Mittal
+4,25,73,Skate Supply India,Skateboard manufacturing and distribution company,,50,2,No,,,,,
+4,25,74,Utopian,Preservative free beverages,,40,1.8,No,,,,,
+4,26,75,GoFig,Platform for surplus and near expiry products,,50,2,No,,,,,
+4,26,76,JoySpoon,Health mouth freshner brand,,40,1.5,Yes,40,0,2,Conditional offer,Ritesh Agarwal
+4,26,77,bambinos.live,Live and online English learning company,,100,1,Yes,100,0,1.5,1% royalty until 1 Cr recouped,Ritesh Agarwal; Anupam Mittal; Namita Thapar
+4,27,78,Fundoo Labs,Chemistry based DIY toys,,60,4,Yes,66,0,7,,Anupam Mittal; Aman Gupta
+4,27,79,GAON,Indian cuisine cloud kitchen,,80,4,Yes,80,0,8,,Vineeta Singh; Anupam Mittal
+4,27,80,Eriweave,Eri silk based textile company,,20,12,Yes,20,0,12,,Namita Thapar; Anupam Mittal
+4,28,81,Paleoo Bakes,Gluten and sugar free cakes,,100,6.5,Yes,100,0,9,1% royalty until 1 Cr recouped,Anupam Mittal; Vineeta Singh
+4,28,82,BeeVee by NeuraSim,VR based vision therapy devices,,100,8,No,,,,,
+4,28,83,Off Mint,High street fashion brand,,0.0001,1,Yes,10,0,4,,Anupam Mittal; Namita Thapar; Peyush Bansal; Aman Gupta; Vineeta Singh
+4,29,84,Chokhat,Animal inspired home decor brand,,50,7,Yes,30,20,10,Debt @ 10% for 1 year,Anupam Mittal; Peyush Bansal
+4,29,85,Zenma Coffee,Frozen coffee brand,,60,3.5,No,,,,,
+4,29,86,The EleFant,App based toy library,,60,1,No,,,,,
+4,30,87,GreenDay,Bio fortified food company,,60,1,Yes,60,0,1,0.5% royalty until 60 L recouped,Namita Thapar
+4,30,88,Pinq Polka,Female hygiene products,,100,2.5,No,,,,,
+4,30,89,Ayati Devices,Vibrasense - neuropathy based medical devices,,100,2,Yes,100,0,4.76,,Namita Thapar; Peyush Bansal
+4,31,90,NearBook,Platform for buying and selling used books,,40,20,Yes,40,0,20,,Anupam Mittal
+4,31,91,Memotag,Proactive devices for dementia care,,50,5,No,,,,,
+4,31,92,Klimate,Cooling vests brand,,54,3,No,,,,,
+4,32,93,HealthFab,Women period panty brand,,100,3,Yes,200,0,7,,Anupam Mittal; Vineeta Singh; Aman Gupta; Peyush Bansal
+4,32,94,PieMatrix,Telescope brand,,100,3,No,,,,,
+4,32,95,Sudhathi,Affordable saree brand,,100,1,Yes,100,0,4,,Anupam Mittal; Aman Gupta; Peyush Bansal
+4,33,96,Moderate,Health and wellness brand,,50,1.25,Yes,100,0,5,,Aman Gupta; Kunal Bahl
+4,33,97,Hire for Care,Premium and special childcare,,36,3,Yes,36,0,5,,Anupam Mittal; Aman Gupta; Vineeta Singh; Peyush Bansal; Kunal Bahl
+4,33,98,Dreamsmiles Veneers,Tooth veneers,,80,6,No,,,,,
+4,34,99,MadMix,Baked snacks,,50,1,Yes,50,0,5,,Ritesh Agarwal
+4,34,100,Palmonas,Demi fine jewellery,,126,1,Yes,126,0,1,0.5% royalty until 1.26 Cr recouped,Namita Thapar; Ritesh Agarwal
+4,34,101,MK,3 wheeler EV vehicles,,350,5,No,,,,,
+4,35,102,Nidhis Grandma Secret,Natural herb haircare brand,,70,2,Yes,70,0,5,1% royalty until 70 L recouped,Anupam Mittal
+4,35,103,Solnce,One stop solar app,,100,1.5,Yes,100,0,2.5,,Aman Gupta
+4,35,104,Born Good,Plant based home cleaner brand,,70,1,No,,,,,
+4,36,105,Dorabi and Amili,Handdyed fashion brand,,75,3,Yes,100,0,4,,Aman Gupta; Anupam Mittal
+4,36,106,Zebralearn,Books platform,,100,0.8,Yes,100,0,1.6,,Ritesh Agarwal
+4,36,107,ExclusiveLane,Home decor and kitchen essentials,,50,1,No,,,,,
+4,37,108,Medial,Professional social network,,50,1,Yes,50,0,2.5,,Ritesh Agarwal
+4,37,109,Panchal Dairy,Goat and sheep cheese brand,,20,10,No,,,,,
+4,37,110,Music Pandit,Online music coaching,,50,1,No,,,,,
+4,38,111,Cograd,AI powered teaching assistant for schools,,100,2,Yes,50,50,6,Debt @ 9% for 3 years,Ritesh Agarwal; Namita Thapar; Vineeta Singh
+4,38,112,EatBetter,Millet based snacking brand,,50,0.5,Yes,50,0,0.5,1% royalty until 50 L recouped,Namita Thapar
+4,38,113,Earthful,Nature based nutrition brand,,75,1,Yes,75,0,2.5,,Ritesh Agarwal
+4,39,114,Trajectory,Travel pillow brand,,100,2,Yes,50,50,3,Debt @ 8% for 3 years,Ritesh Agarwal
+4,39,115,Kavi,Upcycled art brand,,60,1,No,,,,,
+4,39,116,F2DF,Online marketplace for farmers,,50,1,Yes,5,45,2,Debt @ 10% for 2 years,Aman Gupta
+4,40,117,Sugarstrings.ai,DNA based preventive tests,,100,2.5,No,,,,,
+4,40,118,MomsHome,Organic cotton made baby apparels brand,,75,1,Yes,75,0,2,1% royalty until 93.75 L recouped,Vineeta Singh
+4,40,119,Catwalk,Non alcoholic spirits brand,,100,4.16,No,,,,,
+4,41,120,BeautyWise,Skin and Hair nutrition brand,,100,1.5,Yes,300,0,6,,Aman Gupta
+4,41,121,Ivory,Neuroscience based gaming app for cognitive impairment,,50,1.25,Yes,50,0,5,,Namita Thapar
+4,41,122,The House Party by Savar,Luxury catering company,,100,5,Yes,50,50,5,Debt @ 8% for 3 years,Ritesh Agarwal
+4,42,123,Glow Glossary,Matcha tea brand,,60,4,No,,,,,
+4,42,124,Singh Dental care,Dental clinic chain,,100,5,No,,,,,
+4,42,125,Tribalveda,Jamun products,,50,2,Yes,50,0,2.8,2.2% advisory equity,Ritesh Agarwal
+4,43,126,Anuvad,E-Textile Brand,,50,5,No,,,,,
+4,43,127,Fitelo,Weight loss platform,,150,0.5,Yes,150,0,1,1% royalty until 1.5 Cr recouped,Vineeta Singh; Namita Thapar
+4,43,128,Nanighar,App based food service,,100,5,No,,,,,
+4,44,129,Good Monk,Nutrition Mix brand,,100,1.67,Yes,50,50,1,0.25% advisory equity; debt @ 10% for 3 years,Vineeta Singh
+4,44,130,artbuzz,Youth hotels and dormitories,,100,3,No,,,,,
+4,44,131,Tulua,Indian spices brand,,50,2,No,,,,,
+4,45,132,Taffykids,Trendy kidswear brand,,75,1,Yes,75,0,1.5,0.5% royalty until 75 L recouped,Vineeta Singh; Ritesh Agarwal
+4,45,133,Whale Wearable,Self defence wearables,,30,3,Yes,30,0,3,,Vineeta Singh; Aman Gupta
+4,45,134,ZingaVita,Ayurvedic Supplement brand,,100,1.25,No,,,,,
+4,45,135,Dhaagalife,Nature based lifestyle brand,,75,1,No,,,,,
+4,46,136,Tileskraft,Marketplace for tiles dealer,,60,12,No,,,,,
+4,46,137,Krishnasakhi,Jewellery for God idols,,37.5,2.5,No,,,,,
+4,46,138,Bore Charger,Robotic water harvesting system,,75,1.5,No,,,,,
+4,47,139,SuperBolter,Home Interior design platform,,75,0.5,No,,,,,
+4,47,140,Hive School,Sales focused online business school,,60,5,No,,,,,
+4,47,141,Tint Box,Kitchen container brand,,70,5,No,,,,,
+4,48,142,EasyRugs,Online Rugs brand,,35,5,Yes,35,0,5,5% royalty until 52 L recouped,Aman Gupta; Vineeta Singh
+4,48,143,Stylestry,Affordable women's footwear brand,,50,1,No,,,,,
+4,48,144,QuitCi,Quit smoking brand,,50,2,No,,,,,
+4,49,145,Fit Feast,Tasty protein brand,,100,6.5,Yes,100,0,18,,Anupam Mittal; Viraj Bahl
+4,49,146,The Bear House,D2C men's fashion brand,,300,1,Yes,100,200,1,Debt @ 10% for 5 years,Namita Thapar
+4,49,147,Urban Animal,Genetic tests for pets,,45,5,No,,,,,
+4,50,148,Nooky,Sexual wellness brand,,60,1,No,,,,,
+4,50,149,Subculture,Fetish fashion brand,,50,7,No,,,,,
+4,50,150,Woodsmen,Himalayan Whiskey brand,,150,0.5,No,,,,,
+4,51,151,Bhavisya plasts,Bio degradeable plastic manufacturing company,,50,1.5,Yes,200,0,10,,Namita Thapar; Aman Gupta; Chirag Nakrani; Anupam Mittal
+4,51,152,ECOIL,Bio fuel manufacturing company,,100,1.25,Yes,50,50,1,0.6% advisory equity; debt @ 9% for 3 years,Ritesh Agarwal; Chirag Nakrani
+4,51,153,Rescript,Sustainable Stationery,,100,3.33,No,,,,,
+4,52,154,Tickle your art,Stationary and accessories brand,,21.3,7,Yes,21.3,0,7,,Aman Gupta; Anupam Mittal
+4,52,155,Symbionic,Prosthetic brand,,80,2,Yes,40,40,1,1% advisory equity; debt @ 10% for 3 years,Namita Thapar
+4,52,156,XL Cinemas,Mobile app for audio description in cinema,,150,1.5,No,,,,,

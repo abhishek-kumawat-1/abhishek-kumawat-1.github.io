@@ -1,0 +1,158 @@
+season,episode,pitch_no,brand,idea,city,ask_amount_lakh,ask_equity_pct,deal,deal_equity_amount_lakh,deal_debt_lakh,deal_equity_pct,royalty_or_other,sharks
+3,1,1,The Honest Home,Eco-friendly daily use products,,100,2,Yes,100,0,3,1% royalty until ₹150 lakh recouped,Amit Jain
+3,1,2,Adil Qadri,Perfumes and Attar,,100,0.5,Yes,100,0,1,1% royalty until ₹100 lakh recouped,Vineeta Singh
+3,1,3,Conscious Chemist,Skincare Products,,50,2,No,,,,,
+3,2,4,The Cinnamon Kitchen,Plant-based healthy snacks,,60,2,Yes,60,0,5,,Aman Gupta
+3,2,5,Wtf Gyms,Gyms service,,100,2,No,,,,,
+3,2,6,Intervue,Conducts technical interviews online,,150,1,Yes,150,0,2,,Aman Gupta
+3,3,7,Rodbez,Taxi-service for Bihar,,50,5,Yes,20,30,5,debt @12% for 2 yrs,Vineeta Singh; Ritesh Agarwal
+3,3,8,Blix,Robotics toys,,80,2,Yes,80,0,4,conditional offer,Aman Gupta; Ritesh Agarwal
+3,3,9,Homversity,Student housing,,65,2,No,,,,,
+3,4,10,TURMS,Intelligent Clothing,,120,2,Yes,120,0,4,,Azhar Iqubal
+3,4,11,Mintree,Skin care products,,90,1,Yes,90,0,1.5,,Peyush Bansal; Azhar Iqubal
+3,4,12,80Wash,Waterless washing machine,,100,2.5,No,,,,,
+3,5,13,Dil foods,Virtual restaurant service,,50,0.5,Yes,200,0,2.67,,Vineeta Singh; Peyush Bansal; Ritesh Agarwal; Radhika Gupta
+3,5,14,AI Kavach,Online security app,,50,1.25,Yes,100,0,2.5,+2.5% advisory equity,Aman Gupta; Peyush Bansal
+3,5,15,Bartisans,Cocktail and Mocktail brand,,100,2.5,No,,,,,
+3,6,16,Aretto,Kids footwear brand,,80,1,No,,,,,
+3,6,17,Kalakaram,DIY kits,,50,2.5,Yes,60,0,6,,Namita Thapar; Anupam Mittal; Peyush Bansal
+3,6,18,Nabhi Sutra,Ayurvedic oils,,60,3,No,,,,,
+3,7,19,Zorko,Food Brand,,150,1,No,,,,,
+3,7,20,Tramboo,Kashmir willow bats,,30,3,Yes,30,0,4,,Aman Gupta; Peyush Bansal
+3,7,21,WeHear,Hearing Solutions,,250,1,Yes,250,0,1,+1.5% advisory equity; conditional offer,Peyush Bansal
+3,8,22,Tiggle,Chocolate mixes,,50,5,Yes,50,0,20,2% royalty until ₹100 lakh recouped,Peyush Bansal; Amit Jain
+3,8,23,WYLD Card,Customer as Influencer,,50,0.5,Yes,75,0,1.5,,Anupam Mittal
+3,8,24,upliance.ai,Smart Cooker,,100,1,No,,,,,
+3,9,25,Pizza Galleria,100% Veg Pizza,,100,2,No,,,,,
+3,9,26,AI Cars,Hydrogen-powered AI Car,,200,4,No,,,,,
+3,9,27,Rooftop App,Art Learning platform,,200,4,No,,,,,
+3,10,28,Goenchi Feni,Alcohol brand,,100,5,Yes,200,0,15,,Deepinder Goyal
+3,10,29,Arata,Hair care brand,,100,1.25,Yes,100,0,1.33,+0.67% advisory equity,Namita Thapar; Vineeta Singh
+3,10,30,Vecros,Spatial AI drone,,100,2.5,Yes,20,80,1,debt @10% for 3 yrs,Aman Gupta
+3,11,31,Gud Gum,Healthy Chewing Gum brand,,50,5,Yes,80,0,10,4% royalty until ₹80 lakh recouped,Aman Gupta; Vineeta Singh; Anupam Mittal; Ritesh Agarwal
+3,11,32,Eva Scalp Cooling System,Post Chemo Scalp Cooling brand,,30,1.2,Yes,30,0,1.8,,Namita Thapar; Aman Gupta; Ritesh Agarwal
+3,11,33,Elitty,Teenage Make-up Brand,,100,4,No,,,,,
+3,12,34,HoneyTwigs,Honey Brand,,75,3,Yes,75,0,3,,Anupam Mittal; Peyush Bansal; Ritesh Agarwal
+3,12,35,Koparo,Coconut based Cleaning Products,,70,1,Yes,70,0,1,,Aman Gupta; Vineeta Singh
+3,12,36,2Ballz,Men's Innerwear Brand,,30,5,No,,,,,
+3,13,37,JewelBox,Lab Grown Diamond Jewellery Brand,,100,2,Yes,200,0,6,,Aman Gupta; Vineeta Singh; Peyush Bansal; Ritesh Agarwal; Radhika Gupta
+3,13,38,DaakRoom,Letter Writing Services,,36,4,Yes,36,0,6,,Ritesh Agarwal
+3,13,39,Nuvedo,Mushroom Growing Service,,50,3,No,,,,,
+3,14,40,WALK,Wearable Mobility Aid,,50,1.5,Yes,50,0,2.3,,Aman Gupta; Anupam Mittal
+3,14,41,Raja Rani Coaching,Clothes Tailoring Academy,,130,5,No,,,,,
+3,14,42,Decode Age,Age Longetivity Supplements,,100,1.25,Yes,100,0,2.25,1% royalty until ₹150 lakh recouped,Anupam Mittal
+3,15,43,A Little Extra,Hand Made Fabric Jewellery,,48,6,Yes,60,0,7.5,,Anupam Mittal; Vineeta Singh
+3,15,44,MATCH OFF,Assembly Travel Bags,,85,1,No,,,,,
+3,15,45,Nasher Miles,Travel Bags,,300,0.75,Yes,300,0,1.5,1% royalty until ₹300 lakh recouped,Namita Thapar; Aman Gupta; Vineeta Singh; Anupam Mittal; Ritesh Agarwal
+3,16,46,Alt Co,Plant-based dairy products,,150,2,No,,,,,
+3,16,47,Without,Products made from Waste Plastic,,75,1,Yes,75,0,3,,Peyush Bansal; Ronnie Screwvala
+3,16,48,Kibo by Trestle Labs,Optical Character Recognition,,60,1,Yes,60,0,6,,Peyush Bansal; Ronnie Screwvala
+3,17,49,VOLD,Energy Drink,,50,2,Yes,10,0,10,3% royalty until ₹40 lakh recouped,Aman Gupta
+3,17,50,Quirksmith,Jewellery Brand,,80,1,No,,,,,
+3,17,51,Urban Space,Home Interior Brand,,180,1,No,,,,,
+3,18,52,HyperLab,Sports Tech Brand,,10,1,Yes,25,0,1,,Aman Gupta
+3,18,53,ECO BioTraps,Mosquito Breeding Prevention,,50,2,No,,,,,
+3,18,54,Hoora,Auto Care App,,80,2,No,,,,,
+3,19,55,Yes Madam,App-based Home Salon Service,,150,0.5,Yes,150,0,2,additional 2% equity until ₹150 lakh recouped,Aman Gupta; Vineeta Singh; Peyush Bansal; Ritesh Agarwal
+3,19,56,ZeroDor,Waterless Urinals,,100,3,No,,,,,
+3,19,57,Toffee Coffee Roasters,Coffee Brand,,60,2,Yes,36,25,2.33,debt @10% for 3 yrs,Ritesh Agarwal
+3,20,58,Push Sports,Sports Solutions Company,,80,1,Yes,80,0,4,2% royalty until ₹160 lakh recouped,Vineeta Singh; Peyush Bansal
+3,20,59,ORBO AI,AI-based Beauty Advisor,,100,0.75,Yes,100,0,1,,Vineeta Singh
+3,20,60,Cannazo India,Cannabis based Products,,150,5,No,,,,,
+3,21,61,Chefling,DIY Food Products,,40,10,Yes,40,0,16,,Namita Thapar; Peyush Bansal; Amit Jain; Azhar Iqubal
+3,21,62,Intense Focus,Designer Eye Wear Brand,,500,5,No,,,,,
+3,21,63,Millet Amma,Millet based Products,,100,3,No,,,,,
+3,22,64,D'chica,Innerwears for Teenage Girls,,80,1,Yes,80,0,2,,Namita Thapar; Vineeta Singh
+3,22,65,Refit,Refurbished Phones brand,,200,0.5,Yes,200,0,1,1% royalty until ₹300 lakh recouped,Vineeta Singh; Anupam Mittal; Amit Jain
+3,22,66,House of Beauty India,Skin care Products,,150,5,No,,,,,
+3,23,67,Artinci,Zero Sugar Desserts,,50,1.75,Yes,50,0,5,1% royalty until ₹75 lakh recouped,Vineeta Singh
+3,23,68,The Rage Room,Anger Management activities,,20,30,No,,,,,
+3,23,69,Aastey,Athleisure Wear Company,,80,2,No,,,,,
+3,24,70,Matri,Period Pain Relieving Devices,,60,4,Yes,60,0,4,,Namita Thapar; Aman Gupta
+3,24,71,Rubbabu,Rubber Foam Toys,,200,5,No,,,,,
+3,24,72,Gulabo Jaipur,Traditional Jaipur Clothing,,90,1,No,,,,,
+3,25,73,Arista Vault,Smart Luggage Bags,,45,1,Yes,20,25,1,debt @18% for 2 yrs,Anupam Mittal
+3,25,74,Tohands,Smart Calculator with Ledger,,55,1,Yes,60,0,2,,Radhika Gupta; Varun Dua
+3,25,75,Plus Gold,Gold and Jewellery Savings App,,60,1,Yes,60,0,1.5,,Varun Dua
+3,26,76,Aroleap,Smart Home Gym,,100,2.5,Yes,100,0,5,,Anupam Mittal; Peyush Bansal; Amit Jain; Azhar Iqubal
+3,26,77,Cosmix,Herbal Super Supplements,,100,1,Yes,100,0,1,1% royalty until ₹100 lakh recouped,Namita Thapar
+3,26,78,Fabriclore,Custom Fabric Sourcing,,68.1,1,No,,,,,
+3,27,79,Polish Me Pretty,Nail Art Brand,,25,25,Yes,25,0,25,,Peyush Bansal
+3,27,80,GridMats by PotholeRaja,Mats for Concrete Road making,,500,2,No,,,,,
+3,27,81,Uncle Peter Pancakes,Pancake focused QSR,,60,2,Yes,60,0,2.4,3% royalty until ₹120 lakh recouped,Namita Thapar; Vineeta Singh; Anupam Mittal
+3,28,82,Creative Hatti,Graphic Sticker Designing Brand,,60,2,No,,,,,
+3,28,83,Candid Men,Fashion Rental Platform for Men,,60,2,Yes,60,0,5,3% returned to founder if ₹2 Cr PAT achieved,Vineeta Singh; Amit Jain
+3,28,84,Flyrobe,Fashion Rental Platform for Men and Women,,50,1,Yes,50,0,4,,Aman Gupta
+3,29,85,Wiselife,Yoga Accessories,,60,2,Yes,120,0,4,,Namita Thapar; Aman Gupta; Anupam Mittal; Ritesh Agarwal
+3,29,86,Cervicheck,Cervical Cancer Screening Test Kits,,75,1.5,Yes,75,0,5,,Namita Thapar
+3,29,87,Eatverse,Multi brand Cloud Kitchen,,100,1,No,,,,,
+3,30,88,Avataar Skincare,Skincare Services,,70,1,Yes,35,35,0.5,debt @14% for 3 yrs,Aman Gupta; Anupam Mittal
+3,30,89,Chalte Firte Mangal-karyalaya,Portable Wedding Hall,,200,10,No,,,,,
+3,30,90,Kryzen Biotech,Hydroponic Farming,,75,3,Yes,75,0,15,2% royalty until ₹150 lakh recouped,Peyush Bansal
+3,31,91,FOMO Brews,Ice Tea Brand,,35,4,Yes,35,0,6,,Aman Gupta; Anupam Mittal
+3,31,92,Model Verse,Advance AI based Image Model Wrapper,,25,10,Yes,25,0,10,,Anupam Mittal; Amit Jain; Ritesh Agarwal
+3,31,93,Vikrant Bikes,Hydrogen Ethanol fuel based bike,,30,5,No,,,,,
+3,32,94,The Shell Hair,Hair Extension Brand,,30,3,Yes,30,0,3,,Aman Gupta
+3,32,95,RIZE,Energy Bars,,45,6,No,,,,,
+3,32,96,MEPACK,Custom Gym Subscription,,7,10,Yes,7,0,10,,Amit Jain; Ritesh Agarwal
+3,33,97,Bacca Bucci,Footwear Brand,,250,1,No,,,,,
+3,33,98,Vobble,Kids Audio Platform,,25,1.5,Yes,25,0,2,,Namita Thapar
+3,33,99,Be U Natural,Hair Salon,,60,2.5,No,,,,,
+3,34,100,Erotissch,Lingerie and Swimwear Brand,,75,3,No,,,,,
+3,34,101,Niblerzz,Sugar Free Candy,,50,3,Yes,10,40,5,debt @10% for 2 yrs,Aman Gupta
+3,34,102,SORICH,Guilt free Snacks,,90,2.5,No,,,,,
+3,35,103,Littlebox,Fast fashion D2C brand,,75,1,Yes,75,0,2.5,,Namita Thapar; Aman Gupta; Vineeta Singh; Anupam Mittal; Amit Jain
+3,35,104,Creme Castle,Customised Cakes and bakery products,,60,1.5,Yes,60,0,2.5,,Amit Jain
+3,35,105,Namakwali,Organic Spices,,50,5,Yes,10,40,5,debt @8% for 3 yrs,Amit Jain
+3,36,106,Karibo Cosmetics,Customised Lipstick brand,,80,5,No,,,,,
+3,36,107,Deeva,Online Saree Platform,,200,4,Yes,75,125,6,debt @10% for 3 yrs,Aman Gupta; Ritesh Agarwal; Radhika Gupta
+3,36,108,Design Template,Online Design Marketplace,,100,2.5,Yes,100,0,10,,Aman Gupta
+3,37,109,Sama,Online Dispute Resolution,,100,1,Yes,100,0,1.5,,Namita Thapar; Aman Gupta; Ritesh Agarwal
+3,37,110,Golden Feathers,Fabrics made from Butchery Chicken Waste,,500,5,No,,,,,
+3,37,111,Myracle.io,4D Edutainment,,120,3,No,,,,,
+3,38,112,Cup-ji,Flavoured Instant Tea in Cups,,50,5,No,,,,,
+3,38,113,A Toddler Thing,Baby Clothing and Essentials,,80,2,Yes,40,40,2,₹40 lakh debt repaid via 3% royalty until ₹40 lakh recouped,Amit Jain
+3,38,114,FlexifyMe,Body Pain Management Platform,,100,2,Yes,50,50,1.32,debt @10% for 2 yrs,Namita Thapar
+3,39,115,Dharaksha Ecosolution,Sustainable Material Science Company,,0.0125,1,Yes,0.0125,0,1,plus 100 hours of mentorship (ask and deal both ₹1250 for 1% + 100 hours),Aman Gupta; Vineeta Singh; Anupam Mittal; Peyush Bansal; Ritesh Agarwal
+3,39,116,iDreamCareer,Career Counseling Platform,,110,1.28,Yes,60,50,1,debt @8% for 3 yrs,Aman Gupta; Ritesh Agarwal
+3,39,117,Rock Paper Rum,Innovative Indian Rum Brand,,50,2,Yes,20,30,1,debt @10% for 2 yrs,Vineeta Singh
+3,40,118,Fit n Flex,Healthy Snacking and Cereal Brand,,100,3,No,,,,,
+3,40,119,Sukham,Mens Sexual Wellness Brand,,100,3.33,No,,,,,
+3,40,120,Smotect,Nicotine free tablets to quit smoking,,100,1,Yes,50,50,5,debt @15% for 3 yrs,Anupam Mittal
+3,41,121,Katidhan,Autonomous Light Deterrence System,,150,2.5,Yes,75,75,5,debt @10% for 3 yrs,Ritesh Agarwal
+3,41,122,NEMA AI,AI and Neuroscience based EdTech Platform,,80,5,Yes,40,40,8,debt @10% for 3 yrs,Namita Thapar; Vineeta Singh
+3,41,123,Maple Pods,Tech Hospitality and Entertainment Company,,150,5,No,,,,,
+3,42,124,SPEC OPS,Tactical clothing for Military,,80,2,Yes,40,40,2,debt @12% for 2 yrs,Aman Gupta; Amit Jain
+3,42,125,Kaabil Kids,Online Chess Training Academy,,70,2,Yes,50,20,2.5,debt @12% for 2 yrs,Namita Thapar; Aman Gupta
+3,42,126,Odd Giraffe,Journals and Planners for Mental Wellness,,75,7.5,No,,,,,
+3,43,127,Nemocare Raksha,Neonatal Wearable Vital Monitor,,100,2.5,Yes,20,80,0.67,debt @10% for 2 yrs,Aman Gupta
+3,43,128,WhySoBlue,Clothing Brand,,75,3,Yes,40,35,3,debt @10% for 3 yrs,Ritesh Agarwal
+3,43,129,Coratia Technologies,Unmanned Underwater Robots,,80,1,Yes,80,0,1,,Ritesh Agarwal
+3,44,130,CoolAnt,Nature-Based Cooling Technology,,90,1,No,,,,,
+3,44,131,Xmachines,Robotics and AI for Agriculture,,72,4,Yes,72,0,4,,Namita Thapar; Ritesh Agarwal
+3,44,132,Luvottica,Love-Making Furniture,,200,10,No,,,,,
+3,45,133,Farmdidi,Food Business training App,,50,2,Yes,100,0,10,,Vineeta Singh; Peyush Bansal
+3,45,134,Popcorn & Company,Ready to Eat Popcorn,,75,7.5,Yes,75,0,15,3% royalty until ₹75 lakh recouped,Namita Thapar
+3,45,135,Prorata,Fractional Car Ownership Platform,,100,2,Yes,50,50,10,debt @14%,Anupam Mittal; Peyush Bansal
+3,46,136,Indigifts,Gifts tech company,,50,2,Yes,50,0,4,,Vineeta Singh; Ritesh Agarwal
+3,46,137,FuelV by Alien Version,Smart Fuel Caps,,50,5,No,,,,,
+3,46,138,Rocca,Premium Chocolate Brand,,60,4,Yes,30,30,2.5,debt @9% for 3 yrs,Ritesh Agarwal
+3,47,139,Kiko Live,Listing and Creating Websites for Kirana Sellers,,100,1,No,,,,,
+3,47,140,Melooha,AI Powered Astrology Platform,,80,2,No,,,,,
+3,47,141,FUTR Studios,Virtual Influencer for Businesses,,100,2,No,,,,,
+3,48,142,Allter,Certified Organic Rash-Free Diapers,,100,2.5,Yes,100,0,4,,Aman Gupta; Anupam Mittal; Ritesh Agarwal
+3,48,143,First Bud Organics,Organic Products,,50,7,Yes,50,0,10,,Ritesh Agarwal
+3,48,144,Shararat,Bedroom Fashion Brand,,60,2,No,,,,,
+3,49,145,Competishun,Coaching classes for IIT/JEE,,200,1,No,,,,,
+3,49,146,Bombay Closet Cleanse,Thrift Platform Buy-Sell-Rent,,100,2.5,No,,,,,
+3,49,147,Kiosk Kaffee,Premium Coffee Brand,,90,3,No,,,,,
+3,50,148,Neon Attack,Premium Quality Neon Signs,,75,3,Yes,50,0,2,plus ₹25 lakh at 2% royalty until ₹50 lakh recouped,Namita Thapar; Aman Gupta
+3,50,149,P-Tal,"Copper, Brass, and Bronze Kitchenware",,50,1,Yes,100,0,3.2,,Namita Thapar; Aman Gupta; Vineeta Singh; Anupam Mittal; Amit Jain
+3,50,150,Road Pilot,App for Truck Drivers and Fleet Owners,,80,5,No,,,,,
+3,51,151,Smart Mop by CASPIAN,Fast mop for Efficient & Quick Cleaning,,15,1,No,,,,,
+3,51,152,Lea Clothing,Women's Fashion Apparel,,100,2,Yes,100,0,4,2% royalty until ₹150 lakh recouped,Anupam Mittal; Azhar Iqubal; Namita Thapar; Vineeta Singh
+3,51,153,$Krishnarama,Telugu Movie,,200,30,No,,,,,
+3,51,154,Rentit4me,Rental Marketplace,,150,5,No,,,,,
+3,52,155,Cool The Globe,Carbon Footprint Reduction App,,25,5,Yes,25,0,8,,Aman Gupta; Radhika Gupta
+3,52,156,Canvaloop Fibre,Agri-Waste to Fibres & Yarns,,100,1.33,Yes,200,0,4,,Aman Gupta; Anupam Mittal; Azhar Iqubal; Namita Thapar; Radhika Gupta
+3,52,157,DigitalPaani,Wastewater Management Platform,,70,1,No,,,,,
